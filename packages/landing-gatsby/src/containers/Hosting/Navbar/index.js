@@ -11,7 +11,13 @@ import Container from 'common/src/components/UI/Container';
 import { DrawerContext } from 'common/src/contexts/DrawerContext';
 import ScrollSpyMenu from 'common/src/components/ScrollSpyMenu';
 
-import LogoImage from 'common/src/assets/image/hosting/logo.png';
+import { Link } from 'gatsby';
+
+import LogoImage from 'common/src/assets/image/hosting/author-1.jpg';
+
+import Mainsubmenu1 from '../MainPrimaryMenu/MainSubMenu';
+import Maindeskmenu1 from '../MainPrimaryMenu/MainDesktopMenu';
+import MainMobilemenu1 from '../MainPrimaryMenu/MainMobileMenu';
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -39,38 +45,48 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
     <NavbarWrapper {...navbarStyle}>
       <Container>
         <Box {...row}>
-          <Logo
-            href="/hosting"
+          <Link to="/">
+            <img
+              src={LogoImage}
+              className="Image__ImageWrapper LogoImageSize"
+              style={{ maxWidth: '90px', width: '100%', height: '100%' }}
+            />
+          </Link>
+          {/* <Logo
+            href="/"
             logoSrc={LogoImage}
-            title="Agency"
+            title="Home"
             logoStyle={logoStyle}
-          />
+          /> */}
           <Box {...menuWrapper}>
-            <ScrollSpyMenu
+            {/* <ScrollSpyMenu
               className="main_menu"
               menuItems={Data.hostingJson.MENU_ITEMS}
               offset={-70}
-            />
+            /> */}
+            <Maindeskmenu1 />
 
-            <a className="navbar_button" href="#1">
+            {/* <a className="navbar_button" href="#1">
               <Button {...button} title="BUY NOW" />
-            </a>
+            </a> */}
             <Drawer
               width="420px"
               placement="right"
               drawerHandler={<HamburgMenu barColor="#eb4d4b" />}
               open={state.isOpen}
               toggleHandler={toggleHandler}
+              className="Mobile_menu_drawer"
             >
-              <ScrollSpyMenu
+              {/* <ScrollSpyMenu
                 className="mobile_menu"
                 menuItems={Data.hostingJson.MENU_ITEMS}
                 drawerClose={true}
                 offset={-100}
-              />
-              <a className="navbar_drawer_button" href="#1">
+              /> */}
+              <MainMobilemenu1 />
+              {/* <a className="navbar_drawer_button" href="#1">
                 <Button {...button} title="BUY NOW" />
-              </a>
+              </a> */}
             </Drawer>
           </Box>
         </Box>
@@ -92,6 +108,10 @@ Navbar.defaultProps = {
     className: 'hosting_navbar',
     minHeight: '70px',
     display: 'block',
+    position: 'relative',
+    backgroundColor: 'transparent',
+
+    // backgroundColor: 'rgba(255, 255, 255, 0.95)',
   },
   row: {
     flexBox: true,

@@ -8,6 +8,8 @@ import Logo from 'common/src/components/UIElements/Logo';
 import Container from 'common/src/components/UI/Container';
 import FooterWrapper, { List, ListItem } from './footer.style';
 
+import { Link } from 'gatsby';
+
 import LogoImage from 'common/src/assets/image/hosting/logo.png';
 
 const Footer = ({
@@ -15,6 +17,7 @@ const Footer = ({
   col,
   colOne,
   colTwo,
+  colThree,
   titleStyle,
   logoStyle,
   textStyle,
@@ -44,13 +47,17 @@ const Footer = ({
               title="Hosting"
               logoStyle={logoStyle}
             />
-            <Text content="hello@redq.io" {...textStyle} />
-            <Text content="+479-443-9334" {...textStyle} />
+            <Text content="RAP AI is a Next-Gen Content Intelligence Platform that extracts structured data from a range of unstructured content and automates workflows." {...textStyle} />
+            <Box className="socialmedia_icons flexbox flexaligncenter flexrow">
+              <Link to='/'><i className="fa fa-twitter-square"/></Link>
+              <Link to='/'><i className="fa fa-facebook-square"/></Link>
+              <Link to='/'><i className="fa fa-linkedin-square"/></Link>
+            </Box>
           </Box>
           {/* End of footer logo column */}
-          <Box {...colTwo}>
+          <Box {...colTwo} className="flexjustifycenter">
             {Data.hostingJson.FOOTER_WIDGET.map((widget, index) => (
-              <Box className="col" {...col} key={`footer-widget-${index}`}>
+              <Box key={`footer-widget-${index}`}>
                 <Heading content={widget.title} {...titleStyle} />
                 <List>
                   {widget.menuItems.map((item, index) => (
@@ -65,6 +72,31 @@ const Footer = ({
             ))}
           </Box>
           {/* End of footer List column */}
+          <Box {...colThree}>
+              <Box>
+                <Heading content="Recent Posts" {...titleStyle} />
+                <List>
+                    <ListItem>
+                      <a href="#" className="ListItem">
+                      Superior Customer Experience through Next-Generation AI & Intelligent Process Automation (IPA)
+                      </a>
+                    </ListItem>
+                    <ListItem>
+                      <a href="#" className="ListItem">
+                      AI for Invoice Processing
+                      </a>
+                    </ListItem>
+                    <ListItem>
+                      <a href="#" className="ListItem">
+                      AI for Identity Verification
+                      </a>
+                    </ListItem>
+                </List>
+              </Box>
+
+          </Box>
+          {/* End of footer List column */}
+        
         </Box>
       </Container>
     </FooterWrapper>
@@ -77,6 +109,7 @@ Footer.propTypes = {
   col: PropTypes.object,
   colOne: PropTypes.object,
   colTwo: PropTypes.object,
+  colThree: PropTypes.object,
   titleStyle: PropTypes.object,
   textStyle: PropTypes.object,
   logoStyle: PropTypes.object,
@@ -93,7 +126,7 @@ Footer.defaultProps = {
   },
   // Footer col one style
   colOne: {
-    width: [1, '35%', '35%', '23%'],
+    width: [1, '40%', '40%', '30%'],
     mt: [0, '13px'],
     mb: ['30px', 0],
     pl: ['15px', 0],
@@ -101,9 +134,12 @@ Footer.defaultProps = {
   },
   // Footer col two style
   colTwo: {
-    width: ['100%', '65%', '65%', '77%'],
+    width: [1, '30%', '30%', '35%'],
     flexBox: true,
     flexWrap: 'wrap',
+  },
+  colThree: {
+    width: [1, '30%', '30%', '35%'],
   },
   // Footer col default style
   col: {

@@ -1,0 +1,35 @@
+.feature_hover_section_container h2 {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+#feature_hover_section {
+  background: transparent;
+}
+.feature_hover_section_container
+  .feature_hover_sectionItem_container:hover
+  .home_features_icon {
+  filter: brightness(0) invert(1);
+}
+.feature_hover_section_container .icon__wrapper {
+  margin-bottom: 20px !important;
+}
+.feature_hover_section_container .home_features_icon {
+  margin: 0 auto;
+  max-width: 90px;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+.feature_hover_sectionItem_container {
+  padding: 20px 10px !important;
+}
+.feature_hover_section_container {
+  justify-content: center;
+}
+
+.Icon_Hover_Container {
+  display: none;
+}
+.ITpage .IT_IconHover {
+  display: block;
+}

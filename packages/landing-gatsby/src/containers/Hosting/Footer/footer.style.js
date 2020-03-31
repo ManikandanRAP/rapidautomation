@@ -6,7 +6,8 @@ const FooterWrapper = styled.footer`
   background-color: #f9fbfd;
   overflow: hidden;
   @media (min-width: 576px) {
-    padding-top: 130px;
+    // padding-top: 130px;
+    padding-top: 0;
     &:before {
       content: '';
       position: absolute;
@@ -39,6 +40,13 @@ const FooterWrapper = styled.footer`
     @media (max-width: 767px) {
       padding-bottom: 0px;
     }
+  }
+
+  .socialmedia_icons a {
+    margin-right: 8px
+  }
+  .socialmedia_icons i {
+    font-size: 25px;
   }
 `;
 

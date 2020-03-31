@@ -1,0 +1,45 @@
+.container.cta_size_container {
+  background-color: #0d70b6;
+  background-image: linear-gradient(to right, #06324e, #0d70b6);
+}
+
+.container.cta_size_container button {
+  background-color: #fff;
+}
+.container.cta_size_container button .btn-text {
+  color: #000;
+}
+.container.cta_size_container button:hover {
+  background-color: #73c2c2;
+}
+.container.cta_size_container button:hover .btn-text {
+  color: #fff;
+}
+
+.Cta_container {
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 8px;
+  display: none;
+  max-width: 1170px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.Cta_container div {
+  text-align: center;
+}
+.Cta_container p {
+  font-size: 20px !important;
+}
+
+.FormRecognitionPage .cta_FormRecognitionPage,
+.ITPage .cta_ITPage {
+  display: flex;
+}
+
+@media only screen and (max-width: 575px) {
+  .Cta_container p {
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,116 @@
+#desktopmenu .flexboxprops {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#desktopmenu .flexalignstart {
+  align-items: flex-start;
+}
+
+#desktopmenu ul a {
+  display: block;
+}
+
+#desktopmenu ul a,
+#desktopmenu ul span {
+  padding: 10px 20px;
+  color: #fff;
+}
+#desktopmenu ul .spacingmenu {
+  padding: 10px 20px;
+}
+
+#desktopmenu .dropdownMenu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* max-width: 1170px; */
+  max-width: 917px;
+  margin: 0 auto;
+  /* background-color: rgba(255, 255, 255, 0.95); */
+  background-color: #fff;
+  border-top: 2px solid red;
+  border-radius: 4px;
+}
+
+#desktopmenu .dropdownMenu * {
+  color: #212121;
+}
+
+#desktopmenu .dropdownMenu1,
+#desktopmenu .dropdownMenu3,
+#desktopmenu .dropdownMenu4,
+#desktopmenu .dropdownMenu2 {
+  display: none;
+}
+
+#desktopmenu .flexcolumnprops {
+  flex-direction: column;
+}
+#desktopmenu .flexjustifystartprops {
+  justify-content: flex-start;
+}
+
+#desktopmenu .dropdownMenu2 span {
+  text-align: center;
+  padding: 5px 2px;
+}
+#desktopmenu .text_size12 {
+  font-size: 12px;
+}
+
+#desktopmenu .text_bold {
+  font-weight: bold;
+}
+
+#desktopmenu i {
+  font-size: 12px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+#desktopmenu .mainmenuhead:hover nav {
+  display: flex;
+}
+#desktopmenu .mainmenuhead2:hover nav {
+  display: block;
+  cursor: pointer;
+}
+#desktopmenu .dropdownMenu1 ul.subwidth30 {
+  width: 40%;
+}
+#desktopmenu .dropdownMenu1 ul.subwidth70 {
+  width: 60%;
+}
+
+#desktopmenu .dropdownMenu1 .subwidth30 li {
+  position: relative;
+}
+#desktopmenu .dropdownMenu1 .subwidth30 li:first-child i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sticky-nav-active #desktopmenu ul a,
+.sticky-nav-active #desktopmenu ul span {
+  color: #252525;
+}
+
+#desktopmenu .dropdownMenu2 li {
+  width: 33%;
+}
+
+#desktopmenu .btn {
+  display: inline-block;
+  background-color: #2981c2;
+  vertical-align: middle;
+  margin: 20px;
+  margin-bottom: 32px;
+}
+
+/* #desktopmenu .dropdownMenu ul li:hover {
+  background-color: #f5f5f5;
+} */

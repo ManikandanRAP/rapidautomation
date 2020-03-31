@@ -1,0 +1,37 @@
+
+.feature_section_container h2 {
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+#feature_particle_section {
+    background: transparent;
+}
+.feature_section_container .feature_sectionItem_container:hover .home_features_icon {
+    filter: brightness(0) invert(1);
+}
+.feature_section_container .icon__wrapper {
+    margin-bottom: 20px !important;
+}
+.feature_section_container .home_features_icon {
+    margin: 0 auto;
+    max-width: 90px;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+.feature_sectionItem_container {
+    padding: 20px 10px !important;
+}
+
+.Icon_particle_Container {
+    display: none;
+}
+.FormRecognition_info_container .Icon_particle_Container.FormRecognition_Iconparticle {
+    display: block;
+}
+
+/* display in capabilities and benefits */
+.IT_info_container .capability_container .Icon_particle_Container.IT_Iconparticle.capabilities,
+.IT_info_container .benefits_container .Icon_particle_Container.IT_Iconparticle.benefits {
+    display: block;
+}

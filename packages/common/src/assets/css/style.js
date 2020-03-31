@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import './flaticon.css';
+import '../fonts/font-awesome/css/font-awesome.css';
 
 export const ResetCSS = createGlobalStyle`
   ::selection {
