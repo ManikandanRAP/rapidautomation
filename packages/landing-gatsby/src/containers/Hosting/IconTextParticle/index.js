@@ -9,10 +9,9 @@ import { FeatureItem } from '../hosting.style';
 import Image from 'common/src/components/Image';
 import AdditionalContentParticle from './additionalComponent';
 
-import "./icontextparticle.css";
+import './icontextparticle.css';
 
-import sample from 'common/src/assets/image/hosting/icon1.svg'
-
+import sample from 'common/src/assets/image/hosting/icon1.svg';
 
 const IconParticleSection = ({
   sectionWrapper,
@@ -36,36 +35,32 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="Personalization"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="Personalized offers and strategies drive greater customer retention and sales."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="Personalization2"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Personalized offers and strategies drive greater customer retention and sales."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
           <Box {...col}>
             {FeatureItem.animation ? (
@@ -73,36 +68,32 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="Omnichannel"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="Omnichannel engagement covers all your bases to maximize sales & profits."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="Omnichannel"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Omnichannel engagement covers all your bases to maximize sales & profits."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
           <Box {...col}>
             {FeatureItem.animation ? (
@@ -110,36 +101,32 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="Seamless"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="A truly seamless experience keeps customers delighted and returning for more."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="Seamless"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="A truly seamless experience keeps customers delighted and returning for more."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
           <Box {...col}>
             {FeatureItem.animation ? (
@@ -147,36 +134,32 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="Multi-Language"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="Translate content into a customer’s preferred language for ease & convenience."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="Multi-Language"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Translate content into a customer’s preferred language for ease & convenience."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
         </Box>
       </Container>
@@ -189,36 +172,32 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="Helpdesk"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="Enhance helpdesk service with intelligent automation for responding to requests."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="Helpdesk"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Enhance helpdesk service with intelligent automation for responding to requests."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
           <Box {...col}>
             {FeatureItem.animation ? (
@@ -226,36 +205,32 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="Response Automation"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="Speed up service and improve accuracy with AI automation."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="Response Automation"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Speed up service and improve accuracy with AI automation."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
           <Box {...col}>
             {FeatureItem.animation ? (
@@ -263,36 +238,32 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="IT Operations"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="Certain routine IT operations can be automated for greater efficiency."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="IT Operations"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Certain routine IT operations can be automated for greater efficiency."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
           <Box {...col}>
             {FeatureItem.animation ? (
@@ -300,40 +271,36 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="Workflow Automation"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="Rule-based automation of workflows with RPA eliminates manual intervention."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="Workflow Automation"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Rule-based automation of workflows with RPA eliminates manual intervention."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
         </Box>
       </Container>
-    
+
       <Container className="Icon_particle_Container IT_Iconparticle benefits">
         <Box {...row} className="feature_section_container">
           <Box {...col1}>
@@ -342,36 +309,32 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="No AI Knowledge Needed"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="No AI understanding required to leverage the RAP AI platform."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="No AI Knowledge Needed"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="No AI understanding required to leverage the RAP AI platform."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
           <Box {...col1}>
             {FeatureItem.animation ? (
@@ -379,36 +342,32 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="Integration"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="Easily integrates with existing solutions and systems enhancing them."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="Integration"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Easily integrates with existing solutions and systems enhancing them."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
           <Box {...col1}>
             {FeatureItem.animation ? (
@@ -416,42 +375,38 @@ const IconParticleSection = ({
                 <FeatureItem className="feature_sectionItem_container" />
               </Fade>
             ) : (
-                <FeatureItem
-                  className="feature_sectionItem_container text_center"
-                  title={
-                    <Heading
-                      {...featureItemHeading}
-                      className="text_center"
-                      content="Rapid Deployment"
-                    />
-                  }
-                  description={
-                    <Text
-                      {...featureItemDes}
-                      className="text_center"
-                      content="Deployment is a quick and hassle-free process."
-                    />
-                  }
-
-                  icon={
-                    <Image
-                      src={sample}
-                      alt="alt"
-                      className="home_features_icon"
-                    />
-                  }
-                  additionalContent={
-                    <AdditionalContentParticle />
-                  }
-
-                />
-              )}
+              <FeatureItem
+                className="feature_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="Rapid Deployment"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Deployment is a quick and hassle-free process."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+                additionalContent={<AdditionalContentParticle />}
+              />
+            )}
           </Box>
         </Box>
       </Container>
-      
+
       {/* end of IT */}
-      </Box>
+    </Box>
   );
 };
 
@@ -474,7 +429,7 @@ IconParticleSection.defaultProps = {
     id: 'feature_particle_section',
     className: 'service_section',
     pt: ['15px', '15px', '15px', '15px'],
-    background: 'transparent'
+    background: 'transparent',
     // pb: ['60px', '80px', '80px', '100px'],
   },
   secTitleWrapper: {

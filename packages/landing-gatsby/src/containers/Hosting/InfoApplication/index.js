@@ -11,9 +11,9 @@ import Container from 'common/src/components/UI/Container';
 
 import { Link } from 'gatsby';
 
-import IconParticleSection from '../IconTextParticle';
+import IconTextHoverSection from '../IconTextHover';
 
-import sample from 'common/src/assets/image/hosting/author-3.jpg'
+import sample from 'common/src/assets/image/hosting/author-3.jpg';
 
 import './infoapplication.css';
 
@@ -46,7 +46,7 @@ const InfoApplicationSection = ({
                 {...title}
                 className="text_center"
                 content="Cloud Technology for eCommerce"
-                />
+              />
               <Text
                 {...description}
                 className="text_justify"
@@ -60,14 +60,14 @@ const InfoApplicationSection = ({
           <Container>
             <Box>
               <Fade bottom cascade>
-                <Heading {...title} className="text_center" content="How it Works" />
-                
-                <Box className="InfoBanner_Image_container" >
-                  <Image
-                    className="lazyload"
-                    src={sample}
-                    alt="alt"
-                  />
+                <Heading
+                  {...title}
+                  className="text_center"
+                  content="How it Works"
+                />
+
+                <Box className="InfoBanner_Image_container">
+                  <Image className="lazyload" src={sample} alt="alt" />
                 </Box>
               </Fade>
             </Box>
@@ -78,11 +78,10 @@ const InfoApplicationSection = ({
           <Box>
             <Fade bottom cascade>
               <Heading {...title} className="text_center" content="Benefits" />
-              <IconParticleSection />
+              <IconTextHoverSection />
             </Fade>
           </Box>
         </Container>
-        
       </div>
       {/* end of form recognition */}
     </Box>
@@ -155,7 +154,7 @@ InfoApplicationSection.defaultProps = {
   },
   contentArea: {
     width: ['100%', '100%', '80%', '80%', '80%'],
-    margin: '0 auto'
+    margin: '0 auto',
   },
   imageArea: {
     width: ['100%', '100%', '50%'],

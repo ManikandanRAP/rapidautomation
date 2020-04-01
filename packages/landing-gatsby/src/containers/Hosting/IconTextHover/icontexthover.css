@@ -30,6 +30,13 @@
 .Icon_Hover_Container {
   display: none;
 }
-.ITpage .IT_IconHover {
+
+.FormRecognition_info_container
+  .Icon_Hover_Container.FormRecognition_Iconhover.benefits {
+  display: block;
+}
+
+.IT_info_container .capability_container .IT_Iconhover.capability,
+.IT_info_container .benefits_container .IT_Iconhover.benefits {
   display: block;
 }

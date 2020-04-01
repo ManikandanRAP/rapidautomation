@@ -11,9 +11,10 @@ import Container from 'common/src/components/UI/Container';
 
 import { Link } from 'gatsby';
 
-import IconParticleSection from '../IconTextParticle';
+// import IconParticleSection from '../IconTextParticle';
+import IconTextHoverSection from '../IconTextHover';
 
-import sample from 'common/src/assets/image/hosting/author-3.jpg'
+import sample from 'common/src/assets/image/hosting/author-3.jpg';
 
 import './infosolution.css';
 
@@ -42,11 +43,7 @@ const InfoSolutionSection = ({
         <Container>
           <Box {...contentArea}>
             <Fade bottom cascade>
-              <Heading
-                {...title}
-                className="text_center"
-                content="Overview"
-                />
+              <Heading {...title} className="text_center" content="Overview" />
               <Text
                 {...description}
                 className="text_justify"
@@ -60,8 +57,12 @@ const InfoSolutionSection = ({
           <Container className="capability_container">
             <Box>
               <Fade bottom cascade>
-                <Heading {...title} className="text_center" content="Capabilities" />
-                <IconParticleSection />                
+                <Heading
+                  {...title}
+                  className="text_center"
+                  content="Capabilities"
+                />
+                <IconTextHoverSection />
               </Fade>
             </Box>
           </Container>
@@ -71,11 +72,10 @@ const InfoSolutionSection = ({
           <Box>
             <Fade bottom cascade>
               <Heading {...title} className="text_center" content="Benefits" />
-              <IconParticleSection />
+              <IconTextHoverSection />
             </Fade>
           </Box>
         </Container>
-        
       </div>
       {/* end of IT */}
     </Box>
@@ -148,7 +148,7 @@ InfoSolutionSection.defaultProps = {
   },
   contentArea: {
     width: ['100%', '100%', '80%', '80%', '80%'],
-    margin: '0 auto'
+    margin: '0 auto',
   },
   imageArea: {
     width: ['100%', '100%', '50%'],

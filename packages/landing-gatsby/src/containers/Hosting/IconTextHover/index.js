@@ -8,8 +8,7 @@ import Container from 'common/src/components/UI/Container';
 import { FeatureItem } from '../hosting.style';
 import Image from 'common/src/components/Image';
 
-import someimage from 'common/src/assets/image/hosting/author-1.jpg';
-
+import sample from 'common/src/assets/image/hosting/author-1.jpg';
 
 import './icontexthover.css';
 
@@ -28,7 +27,7 @@ const IconTextHoverSection = ({
 }) => {
   return (
     <Box {...sectionWrapper}>
-      <Container className="Icon_Hover_Container IT_IconHover">
+      <Container className="Icon_Hover_Container IT_Iconhover capability">
         <Box {...row} className="feature_hover_section_container">
           <Box {...col2}>
             {FeatureItem.animation ? (
@@ -54,8 +53,8 @@ const IconTextHoverSection = ({
                 }
                 icon={
                   <Image
-                    src={EyeMagicIcon}
-                    alt="EyeMagic"
+                    src={sample}
+                    alt="alt"
                     className="home_features_icon"
                   />
                 }
@@ -86,8 +85,8 @@ const IconTextHoverSection = ({
                 }
                 icon={
                   <Image
-                    src={ResponseGenieIcon}
-                    alt="ResponseGenie"
+                    src={sample}
+                    alt="alt"
                     className="home_features_icon"
                   />
                 }
@@ -118,8 +117,8 @@ const IconTextHoverSection = ({
                 }
                 icon={
                   <Image
-                    src={RPAIcon}
-                    alt="RPA"
+                    src={sample}
+                    alt="alt"
                     className="home_features_icon"
                   />
                 }
@@ -127,8 +126,209 @@ const IconTextHoverSection = ({
             )}
           </Box>
         </Box>
-      </Container>\
+      </Container>
+      <Container className="Icon_Hover_Container IT_Iconhover benefits">
+        <Box {...row} className="feature_hover_section_container">
+          <Box {...col2}>
+            {FeatureItem.animation ? (
+              <Fade bottom delay={120}>
+                <FeatureItem className="feature_hover_sectionItem_container" />
+              </Fade>
+            ) : (
+              <FeatureItem
+                className="feature_hover_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="EyeMagic2"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Speed up document processing using computer vision capabilities including advanced handwriting recognition."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+              />
+            )}
+          </Box>
+          <Box {...col2}>
+            {FeatureItem.animation ? (
+              <Fade bottom delay={120}>
+                <FeatureItem className="feature_hover_sectionItem_container" />
+              </Fade>
+            ) : (
+              <FeatureItem
+                className="feature_hover_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="ResponseGenie"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Improve response time and enhance customer engagement with content, intent analysis and entity extraction."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+              />
+            )}
+          </Box>
+          <Box {...col2}>
+            {FeatureItem.animation ? (
+              <Fade bottom delay={120}>
+                <FeatureItem className="feature_hover_sectionItem_container" />
+              </Fade>
+            ) : (
+              <FeatureItem
+                className="feature_hover_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="RPA"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Reduce costs by automating business workflows with the combined power of AI, RPA and IPA for greater efficiency."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+              />
+            )}
+          </Box>
+        </Box>
+      </Container>
       {/* End of solution IT */}
+      <Container className="Icon_Hover_Container FormRecognition_Iconhover benefits">
+        <Box {...row} className="feature_hover_section_container">
+          <Box {...col2}>
+            {FeatureItem.animation ? (
+              <Fade bottom delay={120}>
+                <FeatureItem className="feature_hover_sectionItem_container" />
+              </Fade>
+            ) : (
+              <FeatureItem
+                className="feature_hover_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="EyeMagic2"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Speed up document processing using computer vision capabilities including advanced handwriting recognition."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+              />
+            )}
+          </Box>
+          <Box {...col2}>
+            {FeatureItem.animation ? (
+              <Fade bottom delay={120}>
+                <FeatureItem className="feature_hover_sectionItem_container" />
+              </Fade>
+            ) : (
+              <FeatureItem
+                className="feature_hover_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="ResponseGenie"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Improve response time and enhance customer engagement with content, intent analysis and entity extraction."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+              />
+            )}
+          </Box>
+          <Box {...col2}>
+            {FeatureItem.animation ? (
+              <Fade bottom delay={120}>
+                <FeatureItem className="feature_hover_sectionItem_container" />
+              </Fade>
+            ) : (
+              <FeatureItem
+                className="feature_hover_sectionItem_container text_center"
+                title={
+                  <Heading
+                    {...featureItemHeading}
+                    className="text_center"
+                    content="RPA"
+                  />
+                }
+                description={
+                  <Text
+                    {...featureItemDes}
+                    className="text_center"
+                    content="Reduce costs by automating business workflows with the combined power of AI, RPA and IPA for greater efficiency."
+                  />
+                }
+                icon={
+                  <Image
+                    src={sample}
+                    alt="alt"
+                    className="home_features_icon"
+                  />
+                }
+              />
+            )}
+          </Box>
+        </Box>
+      </Container>
+      {/* End of application form recognition */}
     </Box>
   );
 };
