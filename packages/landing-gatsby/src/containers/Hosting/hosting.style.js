@@ -3,8 +3,8 @@ import { themeGet } from 'styled-system';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 
 export const GlobalStyle = createGlobalStyle`
-  body{
-    font-family: 'Roboto', sans-serif;
+  body {
+    font-family: 'Rubik-Regular', sans-serif;
   }
 
   h1,
@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik-Bold', sans-serif;
   }
 
   section {
@@ -149,6 +149,22 @@ export const GlobalStyle = createGlobalStyle`
   }
   .flexjustifyaround {
     justify-content: space-around;
+  }
+  .empty_space10 {
+    display: block;
+    height: 10px;
+  }
+  .empty_space20 {
+    display: block;
+    height: 20px;
+  }
+  .empty_space30 {
+    display: block;
+    height: 30px;
+  }
+  .empty_space40 {
+    display: block;
+    height: 40px;
   }
 
   .section_background_color {

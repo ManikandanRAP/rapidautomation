@@ -198,7 +198,7 @@ const Maindeskmenu1 = button => (
               </Link>
             </li>
             <li>
-              <Link className="flexboxprops flexcolumnprops">
+              <Link to="/applications/form-recognition" className="flexboxprops flexcolumnprops">
                 <span>
                   <img src={sampleicon} alt="Form Recognition" />
                 </span>
@@ -224,7 +224,7 @@ const Maindeskmenu1 = button => (
           <ul>
             <li className="text_bold spacingmenu">Functions</li>
             <li>
-              <Link>IT</Link>
+              <Link to="/solutions/it">IT</Link>
             </li>
             <li>
               <Link>Customer Service</Link>
