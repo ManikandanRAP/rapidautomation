@@ -37,6 +37,12 @@
 }
 
 .IT_info_container .capability_container .IT_Iconhover.capability,
-.IT_info_container .benefits_container .IT_Iconhover.benefits {
+.IT_info_container .benefits_container .IT_Iconhover.benefits,
+.Home_info_container .applications_container .Home_Iconhover.applications,
+.Home_info_container
+  .revolutionizingoper_container
+  .Home_Iconhover.revolutionizingoper,
+.Home_info_container .maxproeff_container .Home_Iconhover.maximizeproeff,
+.Home_info_container .platform_container .Home_Iconhover.platform {
   display: block;
 }

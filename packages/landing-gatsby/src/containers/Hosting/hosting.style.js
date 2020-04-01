@@ -4,7 +4,7 @@ import FeatureBlock from 'common/src/components/FeatureBlock';
 
 export const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Rubik-Regular', sans-serif;
+    font-family: 'source_sans_pro_regular',sans-serif;
   }
 
   h1,
@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Rubik-Bold', sans-serif;
+    font-family: 'source_sans_pro_bold',sans-serif;
   }
 
   section {
@@ -170,6 +170,55 @@ export const GlobalStyle = createGlobalStyle`
   .section_background_color {
     background-color: #f9fbfd;
   }
+  .section_background_blue {
+    // background-color: rgb(63, 32, 186);
+    background-image: linear-gradient(128deg, #1a2547, #3b1f47);
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h2 {
+      color: #fff;
+    }
+    .dark-bg {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 0;
+      height: 100%;
+    }
+    .dark-bg-image {
+      position: absolute;
+      top: 0;
+    }
+    .dark-bg-image-right {
+      right: 0;
+      top: calc(100% - 500px);
+    }
+    // start
+    @media only screen and (min-width: 768px) {
+      .bg-image--mobile {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 1199px) {
+      .dark-bg-image:not(.bg-image--mobile) {
+        width: 500px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .dark-bg-image:not(.bg-image--mobile) {
+        display: none;
+      }
+      .dark-bg-image-right {
+        top: calc(100% - 250px);
+      }
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    // end
+  }
+
   .btn.btn_primary {
     padding: 10px 20px;
     min-height: auto;
@@ -220,11 +269,29 @@ export const GlobalStyle = createGlobalStyle`
 
 export const ContentWrapper = styled.div`
   overflow: hidden;
+  .Logo_image_dark {
+    display: none;
+  }
+  .Logo_image_light {
+    display: block;
+  }
+  .Logo_image img {
+    width: 100%;
+    height: 100%;
+    max-width: 135px;
+    vertical-align: middle;
+  }
   .sticky-nav-active {
     .hosting_navbar {
       background: #fff;
       box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);
       padding: 15px 0;
+    }
+    .Logo_image_light {
+      display: none;
+    }
+    .Logo_image_dark {
+      display: block;
     }
   }
 

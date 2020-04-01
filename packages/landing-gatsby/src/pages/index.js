@@ -10,6 +10,7 @@ import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/Hosting/Navbar';
 import FeatureSection from '../containers/Hosting/Features';
 import InfoSection from '../containers/Hosting/Info';
+import InfoHomeSection from '../containers/Hosting/InfoOther';
 import DomainSection from '../containers/Hosting/Domain';
 import PaymentSection from '../containers/Hosting/Payment';
 import GuaranteeSection from '../containers/Hosting/Guarantee';
@@ -33,24 +34,14 @@ export default () => {
         <ResetCSS />
         <GlobalStyle />
 
-        <ContentWrapper>
+        <ContentWrapper className="HomePage">
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
               <Navbar />
             </DrawerProvider>
           </Sticky>
-
           <BannerSection />
-          <FeatureSection />
-          <InfoSection />
-          <PricingSection />
-          <DomainSection />
-          <ServicesSection />
-          <PaymentSection />
-          <TestimonialSection />
-          <GuaranteeSection />
-          <FaqSection />
-          <ContactSection />
+          <InfoHomeSection />
           <Footer />
         </ContentWrapper>
       </ParallaxProvider>

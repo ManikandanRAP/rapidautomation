@@ -84,7 +84,10 @@ const Maindeskmenu1 = button => (
         <nav className="dropdownMenu dropdownMenu2">
           <ul className="flexboxprops">
             <li>
-              <Link className="flexboxprops flexcolumnprops">
+              <Link
+                to="/applications/form-recognition"
+                className="flexboxprops flexcolumnprops"
+              >
                 <span>
                   <img src={sampleicon} alt="Form Recognition" />
                 </span>
@@ -198,7 +201,7 @@ const Maindeskmenu1 = button => (
               </Link>
             </li>
             <li>
-              <Link to="/applications/form-recognition" className="flexboxprops flexcolumnprops">
+              <Link className="flexboxprops flexcolumnprops">
                 <span>
                   <img src={sampleicon} alt="Form Recognition" />
                 </span>

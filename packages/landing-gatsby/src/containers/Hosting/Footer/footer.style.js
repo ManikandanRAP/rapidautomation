@@ -29,7 +29,7 @@ const FooterWrapper = styled.footer`
     background-repeat: no-repeat;
     background-position: center 50px;
     padding-top: 80px;
-    padding-bottom: 80px;
+    // padding-bottom: 80px;
     position: relative;
     @media (min-width: 576px) {
       background-image: url(${FooterImage});
@@ -41,9 +41,18 @@ const FooterWrapper = styled.footer`
       padding-bottom: 0px;
     }
   }
+  .copyright_container {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    p {
+      color: rgba(52, 61, 72, 0.8);
+      font-family: inherit;
+      font-size: 16px;
+    }
+  }
 
   .socialmedia_icons a {
-    margin-right: 8px
+    margin-right: 8px;
   }
   .socialmedia_icons i {
     font-size: 25px;

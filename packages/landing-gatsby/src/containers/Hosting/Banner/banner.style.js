@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import BannerBG from 'common/src/assets/image/hosting/banner-bg.jpg';
+import HomeBG from 'common/src/assets/image/hosting/Banner/BFSI.webp';
+import FormRecognitionBG from 'common/src/assets/image/hosting/Banner/BFSI.webp';
+import ITBG from 'common/src/assets/image/hosting/Banner/BFSI.webp';
 
 const BannerWrapper = styled.section`
   padding-top: 190px;
@@ -20,17 +22,23 @@ const BannerWrapper = styled.section`
   }
   &.banner_container {
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     display: none;
   }
   .FormRecognitionPage &.FormRecognition {
     display: flex;
-    background-image: url(${BannerBG});
+    background-image: url(${FormRecognitionBG});
   }
   .ITPage &.IT {
     display: flex;
-    background-image: url(${BannerBG});
+    background-image: url(${ITBG});
+  }
+  .HomePage &.Home {
+    padding-top: 270px;
+    padding-bottom: 220px;
+    display: flex;
+    background-image: url(${HomeBG});
   }
   &::before {
     content: '';
@@ -56,10 +64,18 @@ const BannerWrapper = styled.section`
     padding-top: 170px;
     padding-bottom: 120px;
     min-height: auto;
+    .HomePage &.Home {
+      padding-top: 250px;
+      padding-bottom: 200px;
+    }
   }
   @media (max-width: 575px) {
     padding-top: 150px;
     padding-bottom: 150px;
+    .HomePage &.Home {
+      padding-top: 230px;
+      padding-bottom: 180px;
+    }
   }
 `;
 

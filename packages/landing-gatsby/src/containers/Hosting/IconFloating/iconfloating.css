@@ -1,0 +1,43 @@
+#IconFloating_section .icontext_card {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 8px 0px;
+  border-radius: 8px;
+  border: 1px solid #dee2e7;
+  /* opacity: 0; */
+}
+#IconFloating_section .icontext_card > div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#IconFloating_section .icontext_card li {
+  margin-bottom: 10px;
+}
+
+#IconFloating_section .iconHead {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#IconFloating_section .iconDescription {
+  font-size: 14px;
+}
+
+#IconFloating_section .icontext_card:hover {
+  background-image: linear-gradient(to right, #f25663, #f25663 50%, #f25a89);
+  border-color: #f25663;
+  color: #fff;
+}
+
+#IconFloating_section .icontext_card:hover .icon_image {
+  filter: brightness(0) invert(1);
+}
+#IconFloating_section .icon_image {
+  width: 100%;
+  height: 100%;
+  max-width: 90px;
+  max-height: 90px;
+  object-fit: contain;
+  padding: 10px;
+}

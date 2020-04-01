@@ -10,7 +10,7 @@ import FooterWrapper, { List, ListItem } from './footer.style';
 
 import { Link } from 'gatsby';
 
-import LogoImage from 'common/src/assets/image/hosting/logo.png';
+import LogoImage from 'common/src/assets/image/hosting/logo.svg';
 
 const Footer = ({
   row,
@@ -47,11 +47,20 @@ const Footer = ({
               title="Hosting"
               logoStyle={logoStyle}
             />
-            <Text content="RAP AI is a Next-Gen Content Intelligence Platform that extracts structured data from a range of unstructured content and automates workflows." {...textStyle} />
+            <Text
+              content="RAP AI is a Next-Gen Content Intelligence Platform that extracts structured data from a range of unstructured content and automates workflows."
+              {...textStyle}
+            />
             <Box className="socialmedia_icons flexbox flexaligncenter flexrow">
-              <Link to='/'><i className="fa fa-twitter-square"/></Link>
-              <Link to='/'><i className="fa fa-facebook-square"/></Link>
-              <Link to='/'><i className="fa fa-linkedin-square"/></Link>
+              <Link to="/">
+                <i className="fa fa-twitter-square" />
+              </Link>
+              <Link to="/">
+                <i className="fa fa-facebook-square" />
+              </Link>
+              <Link to="/">
+                <i className="fa fa-linkedin-square" />
+              </Link>
             </Box>
           </Box>
           {/* End of footer logo column */}
@@ -73,30 +82,35 @@ const Footer = ({
           </Box>
           {/* End of footer List column */}
           <Box {...colThree}>
-              <Box>
-                <Heading content="Recent Posts" {...titleStyle} />
-                <List>
-                    <ListItem>
-                      <a href="#" className="ListItem">
-                      Superior Customer Experience through Next-Generation AI & Intelligent Process Automation (IPA)
-                      </a>
-                    </ListItem>
-                    <ListItem>
-                      <a href="#" className="ListItem">
-                      AI for Invoice Processing
-                      </a>
-                    </ListItem>
-                    <ListItem>
-                      <a href="#" className="ListItem">
-                      AI for Identity Verification
-                      </a>
-                    </ListItem>
-                </List>
-              </Box>
-
+            <Box>
+              <Heading content="Recent Posts" {...titleStyle} />
+              <List>
+                <ListItem>
+                  <a href="#" className="ListItem">
+                    Superior Customer Experience through Next-Generation AI &
+                    Intelligent Process Automation (IPA)
+                  </a>
+                </ListItem>
+                <ListItem>
+                  <a href="#" className="ListItem">
+                    AI for Invoice Processing
+                  </a>
+                </ListItem>
+                <ListItem>
+                  <a href="#" className="ListItem">
+                    AI for Identity Verification
+                  </a>
+                </ListItem>
+              </List>
+            </Box>
           </Box>
           {/* End of footer List column */}
-        
+        </Box>
+        <Box className="copyright_container">
+          <p className="text_center">
+            Copyright &copy; {new Date().getFullYear()} Rapid Acceleration
+            Partners, Inc.
+          </p>
         </Box>
       </Container>
     </FooterWrapper>
@@ -127,7 +141,7 @@ Footer.defaultProps = {
   // Footer col one style
   colOne: {
     width: [1, '40%', '40%', '30%'],
-    mt: [0, '13px'],
+    mt: [0, '0px'],
     mb: ['30px', 0],
     pl: ['15px', 0],
     pr: ['15px', '15px', 0],
@@ -153,7 +167,7 @@ Footer.defaultProps = {
     color: '#343d48',
     fontSize: '16px',
     fontWeight: '700',
-    mb: '30px',
+    mb: '10px',
   },
   // Default logo size
   logoStyle: {

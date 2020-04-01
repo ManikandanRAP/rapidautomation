@@ -3,69 +3,6 @@
   	Creation date: 10/02/2019 12:14
   	*/
 
-/* robotoslab and nunito */
-
-@font-face {
-  font-family: 'RobotoSlab-Bold';
-  src: url('../fonts/fonts/RobotoSlab-Bold.eot');
-  src: url('../fonts/fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts/RobotoSlab-Bold.ttf') format('truetype'),
-       url('../fonts/fonts/RobotoSlab-Bold.woff') format('woff'),
-       url('../fonts/fonts/RobotoSlab-Bold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'RobotoSlab-SemiBold';
-  src: url('../fonts/fonts/RobotoSlab-SemiBold.eot');
-  src: url('../fonts/fonts/RobotoSlab-SemiBold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts/RobotoSlab-SemiBold.ttf') format('truetype'),
-       url('../fonts/fonts/RobotoSlab-SemiBold.woff') format('woff'),
-       url('../fonts/fonts/RobotoSlab-SemiBold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'RobotoSlab-ExtraBold';
-  src: url('../fonts/fonts/RobotoSlab-ExtraBold.eot');
-  src: url('../fonts/fonts/RobotoSlab-ExtraBold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts/RobotoSlab-ExtraBold.ttf') format('truetype'),
-       url('../fonts/fonts/RobotoSlab-ExtraBold.woff') format('woff'),
-       url('../fonts/fonts/RobotoSlab-ExtraBold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Nunito-Bold';
-  src: url('../fonts/fonts/Nunito-Bold.eot');
-  src: url('../fonts/fonts/Nunito-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts/Nunito-Bold.ttf') format('truetype'),
-       url('../fonts/fonts/Nunito-Bold.woff') format('woff'),
-       url('../fonts/fonts/Nunito-Bold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Nunito-SemiBold';
-  src: url('../fonts/fonts/Nunito-SemiBold.eot');
-  src: url('../fonts/fonts/Nunito-SemiBold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts/Nunito-SemiBold.ttf') format('truetype'),
-       url('../fonts/fonts/Nunito-SemiBold.woff') format('woff'),
-       url('../fonts/fonts/Nunito-SemiBold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Nunito-Regular';
-  src: url('../fonts/fonts/Nunito-Regular.eot');
-  src: url('../fonts/fonts/Nunito-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts/Nunito-Regular.ttf') format('truetype'),
-       url('../fonts/fonts/Nunito-Regular.woff') format('woff'),
-       url('../fonts/fonts/Nunito-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* flaticon */
 
 @font-face {

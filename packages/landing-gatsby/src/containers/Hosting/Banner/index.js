@@ -12,65 +12,66 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 // import './bannerother.css';
 
-
-const BannerSection = ({
-  row,
-  title,
-  description,
-  button,
-  textArea,
-}) => {
+const BannerSection = ({ row, title, description, button, textArea }) => {
   return (
     <>
-    <BannerWrapper className="banner_container FormRecognition">
-      <ParticlesComponent />
+      <BannerWrapper className="banner_container Home">
+        <ParticlesComponent />
         <Container>
           <Box {...row}>
             <Box {...textArea}>
-              <Text
-                {...description}
-                content='Application'
+              <Heading
+                {...title}
+                className="text_center"
+                content="Practical AI that delivers"
               />
               <Heading
                 {...title}
-                content="Form Recognition"
+                className="text_center"
+                content="Productivity"
               />
-              <Box className="seperator_line" />
-              <Box onClick={() => scrollTo('#')}>
-                <Text
-                  {...description}
-                  content='Learn More'
-                />
+              <Text
+                {...description}
+                className="text_center"
+                content="Automate extraction of structured data from unstructured content"
+              />
+              <Box className="empty_space20" />
+              <Box className="margin_auto seperator_line" />
+              <Box className="empty_space30" />
+              <Box className="text_center">
+                <Link to="/" className="btn btn_primary">
+                  <span className="btn-text">Getting Started</span>
+                </Link>
               </Box>
             </Box>
           </Box>
         </Container>
-    </BannerWrapper>
-    <BannerWrapper className="banner_container IT">
-      <ParticlesComponent />
-        <Container>
-          <Box {...row}>
-            <Box {...textArea}>
-              <Text
-                {...description}
-                content='Solutions'
-              />
-              <Heading
-                {...title}
-                content="IT"
-              />
-              <Box className="seperator_line" />
-              <Box onClick={() => scrollTo('#')}>
-                <Text
-                  {...description}
-                  content='Learn More'
-                />
-              </Box>
-            </Box>
-          </Box>
-        </Container>
-    </BannerWrapper>
+      </BannerWrapper>
 
+      <BannerWrapper className="banner_container FormRecognition">
+        <ParticlesComponent />
+        <Container>
+          <Box {...row}>
+            <Box {...textArea}>
+              <Text {...description} content="Application" />
+              <Heading {...title} content="Form Recognition" />
+              <Box className="seperator_line" />
+            </Box>
+          </Box>
+        </Container>
+      </BannerWrapper>
+      <BannerWrapper className="banner_container IT">
+        <ParticlesComponent />
+        <Container>
+          <Box {...row}>
+            <Box {...textArea}>
+              <Text {...description} content="Solutions" />
+              <Heading {...title} content="IT" />
+              <Box className="seperator_line" />
+            </Box>
+          </Box>
+        </Container>
+      </BannerWrapper>
     </>
   );
 };
@@ -91,11 +92,11 @@ BannerSection.defaultProps = {
     justifyContent: 'center',
   },
   textArea: {
-    width: ['98%', '95%', '95%', '95%', '85%'],
+    width: ['100%', '100%', '100%', '100%', '100%'],
   },
   title: {
     fontSize: ['26px', '32px', '42px', '45px', '45px'],
-    fontWeight: '400',
+    fontWeight: '700',
     // color: '#0f2137',
     color: '#fff',
     letterSpacing: '-0.025em',
@@ -122,7 +123,6 @@ BannerSection.defaultProps = {
     colors: 'primaryWithBg',
     iconPosition: 'left',
   },
-
 };
 
 export default BannerSection;

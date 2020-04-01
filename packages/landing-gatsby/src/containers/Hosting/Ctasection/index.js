@@ -17,13 +17,15 @@ const Ctasection = ({ button, box_size, cta_size_container }) => {
           </Box>
           <Box {...box_size}>
             <Link to="/contact" className="btn btn_primary">
-              <span className="btn-text">Schedule A Consultation</span>
+              <span className="btn-text">Book a Demo Now</span>
             </Link>
           </Box>
         </Box>
         <Box className="Cta_container cta_ITPage">
           <Box {...box_size}>
-            <p>Automate processes using AI for speed, efficiency and savings.</p>
+            <p>
+              Automate processes using AI for speed, efficiency and savings.
+            </p>
           </Box>
           <Box {...box_size}>
             <Link to="/contact" className="btn btn_primary">

@@ -11,9 +11,16 @@ import Container from 'common/src/components/UI/Container';
 
 import { Link } from 'gatsby';
 
-import IconTextHoverSection from '../IconTextHover';
+import IconFloatingsection from '../IconFloating';
 
 import sample from 'common/src/assets/image/hosting/author-3.jpg';
+
+import darkRightImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-right.svg';
+import darkLeftImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-left.svg';
+import darkRightMobImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-right-mobile.svg';
+import darkLeftMobImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-left-mobile.svg';
+
+import FormRecognitionImg1 from 'common/src/assets/image/hosting/Pages/Form Recognition/How It Works.png';
 
 import './infoapplication.css';
 
@@ -38,51 +45,73 @@ const InfoApplicationSection = ({
 }) => {
   return (
     <Box {...sectionWrapper}>
-      <div className="multi_sections_container FormRecognition_info_container">
+      <Box className="multi_sections_container FormRecognition_info_container">
         <Container>
           <Box {...contentArea}>
             <Fade bottom cascade>
-              <Heading
-                {...title}
-                className="text_center"
-                content="Cloud Technology for eCommerce"
-              />
+              <Heading {...title} className="text_center" content="Overview" />
               <Text
                 {...description}
                 className="text_justify"
-                content="eCommerce businesses are leveraging cloud technology and edge computing for massive benefits across their entire eCommerce ecosystem. Cnetric has the expertise and skills to integrate cloud technology and connect all your systems for a seamless, robust eCommerce system that can adapt to changes in demand with minimal infrastructure costs."
+                content="Automate form recognition with the capacity to handle multiple templates and formats. Leverage RAP AI’s EyeMagic engine that has OCR capabilities and can recognize text both printed and handwritten. Expedite form processing with zero manual intervention thanks the power of EyeMagic. Extract meaningful structured content from myriad types of forms and feed this structured data into other systems that make use of such content. End-to-end automation of scanned forms provides massive cost-savings, accelerates process cycle time, eliminates errors that are common in manual processes and enables scalability to cope with increased volumes of forms. The application can be deployed on-premise or on a private or public cloud as suits your requirements. Train once in a matter of days, and then deploy to transform your form recognition processes for maximum efficiency."
               />
+              <Box className="empty_space20" />
             </Fade>
           </Box>
         </Container>
 
-        <Box className="section_background_color">
+        <Container>
+          <Box>
+            <Fade bottom cascade>
+              <Heading
+                {...title}
+                className="text_center"
+                content="How it Works"
+              />
+              <Box className="empty_space10" />
+              <Box>
+                <Image
+                  className="lazyload"
+                  src={FormRecognitionImg1}
+                  alt="how it works"
+                />
+              </Box>
+              <Box className="empty_space20" />
+            </Fade>
+          </Box>
+        </Container>
+
+        <Box className="section_background_blue">
+          <aside className="dark-bg">
+            <img
+              className="dark-bg-image dark-bg-image-right data"
+              src={darkRightImg}
+            />
+            <img className="dark-bg-image" src={darkLeftImg} />
+            <img
+              className="dark-bg-image dark-bg-image-right bg-image--mobile data"
+              src={darkRightMobImg}
+            />
+            <img
+              className="dark-bg-image bg-image--mobile data"
+              src={darkLeftMobImg}
+            />
+          </aside>
           <Container>
             <Box>
               <Fade bottom cascade>
                 <Heading
                   {...title}
                   className="text_center"
-                  content="How it Works"
+                  content="Benefits"
                 />
-
-                <Box className="InfoBanner_Image_container">
-                  <Image className="lazyload" src={sample} alt="alt" />
-                </Box>
+                <IconFloatingsection />
               </Fade>
+              <Box className="empty_space20" />
             </Box>
           </Container>
         </Box>
-
-        <Container>
-          <Box>
-            <Fade bottom cascade>
-              <Heading {...title} className="text_center" content="Benefits" />
-              <IconTextHoverSection />
-            </Fade>
-          </Box>
-        </Container>
-      </div>
+      </Box>
       {/* end of form recognition */}
     </Box>
   );

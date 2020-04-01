@@ -13,7 +13,8 @@ import ScrollSpyMenu from 'common/src/components/ScrollSpyMenu';
 
 import { Link } from 'gatsby';
 
-import LogoImage from 'common/src/assets/image/hosting/author-1.jpg';
+import LogoDark from 'common/src/assets/image/hosting/logo.svg';
+import LogoLight from 'common/src/assets/image/hosting/logo-light.svg';
 
 import Mainsubmenu1 from '../MainPrimaryMenu/MainSubMenu';
 import Maindeskmenu1 from '../MainPrimaryMenu/MainDesktopMenu';
@@ -45,19 +46,22 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
     <NavbarWrapper {...navbarStyle}>
       <Container>
         <Box {...row}>
-          <Link to="/">
+          <Link to="/" className="Logo_image Logo_image_dark">
             <img
-              src={LogoImage}
+              src={LogoDark}
+              alt="Rapid Acceleration Partners"
               className="Image__ImageWrapper LogoImageSize"
               style={{ maxWidth: '90px', width: '100%', height: '100%' }}
             />
           </Link>
-          {/* <Logo
-            href="/"
-            logoSrc={LogoImage}
-            title="Home"
-            logoStyle={logoStyle}
-          /> */}
+          <Link to="/" className="Logo_image Logo_image_light">
+            <img
+              src={LogoLight}
+              alt="Rapid Acceleration Partners"
+              className="Image__ImageWrapper LogoImageSize"
+              style={{ maxWidth: '90px', width: '100%', height: '100%' }}
+            />
+          </Link>
           <Box {...menuWrapper}>
             {/* <ScrollSpyMenu
               className="main_menu"

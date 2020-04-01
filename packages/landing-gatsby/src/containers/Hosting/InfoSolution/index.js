@@ -50,6 +50,7 @@ const InfoSolutionSection = ({
                 content="Many tasks and processes that fall under the purview of the IT department can be automated by implementing RAP AI. You don’t need any AI knowledge to leverage the power of the platform. Leverage digital transformation for a multitude of benefits using the power of AI."
               />
             </Fade>
+            <Box className="empty_space20" />
           </Box>
         </Container>
 
@@ -64,6 +65,7 @@ const InfoSolutionSection = ({
                 />
                 <IconTextHoverSection />
               </Fade>
+              <Box className="empty_space20" />
             </Box>
           </Container>
         </Box>
@@ -74,6 +76,7 @@ const InfoSolutionSection = ({
               <Heading {...title} className="text_center" content="Benefits" />
               <IconTextHoverSection />
             </Fade>
+            <Box className="empty_space20" />
           </Box>
         </Container>
       </div>
