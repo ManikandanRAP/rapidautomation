@@ -22,7 +22,7 @@ const ParticlesWebComponent = () => {
               anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
             },
             size: {
-              value: 3,
+              value: 2,
               random: true,
               anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
             },

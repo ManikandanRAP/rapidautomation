@@ -29,7 +29,7 @@ export default () => {
   return (
     <ThemeProvider theme={hostingTheme}>
       <ParallaxProvider>
-        <SEO title="Hosting | A react next landing page" />
+        <SEO title="Next-gen Content Intelligence Platform" />
 
         <ResetCSS />
         <GlobalStyle />

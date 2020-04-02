@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `A react next landing page`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Rapid Acceleration Partners AI`,
+    description: `RAP AI is an industry-leading, next-gen content intelligence platform that uses AI to automate extraction of structured data from unstructured content, automate workflows and provide intelligent responses.`,
     author: `@gatsbyjs`,
   },
   plugins: [
