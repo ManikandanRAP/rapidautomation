@@ -40,14 +40,14 @@ const BannerSection = ({ row, title, description, button, textArea }) => {
               <Box className="empty_space20" />
               <Box className="margin_auto seperator_line" />
               <Box className="empty_space30" />
-              <Box className="text_center">
-                <Link to="/" className="btn btn_primary">
-                  <span className="btn-text">Getting Started</span>
-                </Link>
-              </Box>
             </Box>
           </Box>
         </Container>
+        <Box className="home_button">
+          <Link to="/" className="btn btn_primary">
+            <span className="btn-text">Getting Started</span>
+          </Link>
+        </Box>
       </BannerWrapper>
 
       <BannerWrapper className="banner_container FormRecognition">

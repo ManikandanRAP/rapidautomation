@@ -60,6 +60,13 @@ const BannerWrapper = styled.section`
   .container {
     z-index: 9;
   }
+  .home_button {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -10%);
+    z-index: 3;
+  }
   @media (max-width: 990px) {
     padding-top: 170px;
     padding-bottom: 120px;

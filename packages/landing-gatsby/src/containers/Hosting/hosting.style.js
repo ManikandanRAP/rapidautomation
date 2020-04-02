@@ -166,7 +166,17 @@ export const GlobalStyle = createGlobalStyle`
     display: block;
     height: 40px;
   }
-
+  // Home page particle
+  .banner_container.Home {
+    .particle {
+      z-index: 2;
+    }
+    .container {
+      z-index: 1;
+      position: relative;
+    }
+    
+  }
   .section_background_color {
     background-color: #f9fbfd;
   }
@@ -195,7 +205,6 @@ export const GlobalStyle = createGlobalStyle`
       right: 0;
       top: calc(100% - 500px);
     }
-    // start
     @media only screen and (min-width: 768px) {
       .bg-image--mobile {
         display: none;
@@ -216,9 +225,8 @@ export const GlobalStyle = createGlobalStyle`
       padding-top: 30px;
       padding-bottom: 30px;
     }
-    // end
   }
-
+  // END OF BACKGROUND EFFECT
   .btn.btn_primary {
     padding: 10px 20px;
     min-height: auto;
