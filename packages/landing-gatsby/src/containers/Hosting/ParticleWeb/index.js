@@ -8,7 +8,7 @@ const ParticlesWebComponent = () => {
         className="particle"
         params={{
           particles: {
-            number: { value: 120, density: { enable: true, value_area: 800 } },
+            number: { value: 80, density: { enable: true, value_area: 800 } },
             color: { value: '#ffffff' },
             shape: {
               type: 'circle',
@@ -22,7 +22,7 @@ const ParticlesWebComponent = () => {
               anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
             },
             size: {
-              value: 3,
+              value: 2,
               random: true,
               anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
             },
