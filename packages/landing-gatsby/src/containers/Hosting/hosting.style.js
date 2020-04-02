@@ -13,7 +13,9 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'source_sans_pro_bold',sans-serif;
+    // font-family: 'source_sans_pro_bold',sans-serif;
+    font-family: 'source_sans_pro_regular',sans-serif;
+    font-weight: bold;
   }
 
   section {

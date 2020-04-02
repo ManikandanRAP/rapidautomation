@@ -127,11 +127,11 @@ const InfoApplicationSection = ({
           <Container>
             <Box>
               <Fade bottom cascade>
-                <Heading
+                {/* <Heading
                   {...title}
                   className="text_center"
                   content="Benefits"
-                />
+                /> */}
                 <IconFloatingsection />
               </Fade>
               <Box className="empty_space20" />
@@ -228,15 +228,15 @@ InfoApplicationSection.defaultProps = {
     mb: '-60px',
   },
   title: {
-    fontSize: ['30px', '30px', '35px', '40px', '45px'],
+    fontSize: ['30px', '30px', '35px', '40px', '40px'],
     fontWeight: '300',
     color: '#0f2137',
-    letterSpacing: '-0.025em',
+    letterSpacing: '0.015em',
     mb: '25px',
     pt: '25px',
   },
   description: {
-    fontSize: ['16px', '18px', '18px', '18px', '18px'],
+    fontSize: ['16px', '16px', '18px', '18px', '18px'],
     // color: '#343d48cc',
     color: '#252525',
     lineHeight: '1.5',
