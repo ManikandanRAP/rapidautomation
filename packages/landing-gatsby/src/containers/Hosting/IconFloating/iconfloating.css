@@ -37,7 +37,7 @@
   background-image: linear-gradient(to right, #f25663, #f25663 50%, #f25a89);
   /* background-image: linear-gradient(to right, #fff, #fff 50%, #ffff); */
   border-color: #f25a89;
-  color: inherit;
+  color: #fff;
   transform: scale(1.02);
 }
 
