@@ -20,6 +20,11 @@ import darkLeftImg from 'common/src/assets/image/hosting/Background/Benefits/dar
 import darkRightMobImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-right-mobile.svg';
 import darkLeftMobImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-left-mobile.svg';
 
+import CurveDeskImg from 'common/src/assets/image/hosting/Background/Overview/CurveDeskImage.svg';
+import CurveMobImg from 'common/src/assets/image/hosting/Background/Overview/CurveMobImage.svg';
+import DiamondDeskImg from 'common/src/assets/image/hosting/Background/Overview/DiamondDeskImage.svg';
+import DiamondMobImg from 'common/src/assets/image/hosting/Background/Overview/DiamondMobImage.svg';
+
 import FormRecognitionImg1 from 'common/src/assets/image/hosting/Pages/Form Recognition/How It Works.png';
 
 import './infoapplication.css';
@@ -46,6 +51,28 @@ const InfoApplicationSection = ({
   return (
     <Box {...sectionWrapper}>
       <Box className="multi_sections_container FormRecognition_info_container">
+        <aside class="bg-images section_background_white">
+          <img
+            class="bg-image"
+            src={CurveDeskImg}
+            alt="Background image of a diamond shape"
+          />
+          <img
+            class="bg-image"
+            src={DiamondDeskImg}
+            alt="Background image of a diamond shape"
+          />
+          <img
+            class="bg-image bg-image--mobile"
+            src={CurveMobImg}
+            alt="Background image of a diamond shape"
+          />
+          <img
+            class="bg-image bg-image--mobile"
+            src={DiamondMobImg}
+            alt="Background image of a diamond shape"
+          />
+        </aside>
         <Container>
           <Box {...contentArea}>
             <Fade bottom cascade>

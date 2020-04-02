@@ -180,6 +180,35 @@ export const GlobalStyle = createGlobalStyle`
   .section_background_color {
     background-color: #f9fbfd;
   }
+  .section_background_white {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    @media only screen and (min-width: 768px) {
+      .bg-image--mobile {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .bg-image:not(.bg-image--mobile) {
+          display: none;
+      }
+    }
+
+    // end
+  }
   .section_background_blue {
     // background-color: rgb(63, 32, 186);
     background-image: linear-gradient(128deg, #1a2547, #3b1f47);
