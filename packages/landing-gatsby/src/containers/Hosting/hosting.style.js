@@ -181,7 +181,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #f9fbfd;
   }
   .section_background_white {
-    height: 100vh;
+    height: 100%;
     position: absolute;
     top: 0;
     width: 100%;
