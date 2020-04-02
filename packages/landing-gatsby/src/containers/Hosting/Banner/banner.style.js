@@ -4,10 +4,10 @@ import FormRecognitionBG from 'common/src/assets/image/hosting/Banner/BFSI.webp'
 import ITBG from 'common/src/assets/image/hosting/Banner/BFSI.webp';
 
 const BannerWrapper = styled.section`
-  padding-top: 190px;
-  padding-bottom: 140px;
-  // min-height: 400px;
-  max-height: 150px;
+  padding-top: 50px;
+  // padding-bottom: 150px;
+  min-height: 500px;
+  max-height: 500px;
   display: flex;
   align-items: center;
   .particle {
@@ -44,7 +44,10 @@ const BannerWrapper = styled.section`
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(5, 47, 74, 0.67);
+    // background-color: rgba(5, 47, 74, 0.67);
+    // background-image: linear-gradient(128deg, #6428e2, #510bdf);
+    background-image: linear-gradient(to bottom, #360fca, #311c87 80%, #5012d9);
+    opacity: 0.85;
     position: absolute;
     left: 0;
     right: 0;
@@ -68,17 +71,18 @@ const BannerWrapper = styled.section`
     z-index: 3;
   }
   @media (max-width: 990px) {
-    padding-top: 170px;
-    padding-bottom: 120px;
-    min-height: auto;
+    padding-top: 40px;
+    min-height: 450px;
+    max-height: 450px;
     .HomePage &.Home {
       padding-top: 250px;
       padding-bottom: 200px;
     }
   }
   @media (max-width: 575px) {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 40px;
+    min-height: 525px;
+    max-height: 525px;
     .HomePage &.Home {
       padding-top: 230px;
       padding-bottom: 180px;

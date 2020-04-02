@@ -1,10 +1,13 @@
 #IconFloating_section .icontext_card {
   background-color: #fff;
   padding: 30px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 8px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 8px 0px; */
+  box-shadow: 0 16px 64px 0 rgba(18, 21, 26, 0.24);
   border-radius: 8px;
   border: 1px solid #dee2e7;
   /* opacity: 0; */
+  transform: scale(1);
+  transition: all 0.2s ease;
 }
 #IconFloating_section .icontext_card > div {
   padding-left: 15px;
@@ -28,6 +31,7 @@
   background-image: linear-gradient(to right, #f25663, #f25663 50%, #f25a89);
   border-color: #f25663;
   color: #fff;
+  transform: scale(1.03);
 }
 
 #IconFloating_section .icontext_card:hover .icon_image {
@@ -40,4 +44,14 @@
   max-height: 90px;
   object-fit: contain;
   padding: 10px;
+}
+
+/* show and hide */
+
+.Icon_Floating_Container {
+  display: none;
+}
+
+.FormRecognitionPage .Icon_Floating_Container.FormRecognition.Benefits {
+  display: block;
 }

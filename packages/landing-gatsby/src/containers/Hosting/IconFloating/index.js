@@ -32,210 +32,215 @@ const IconFloatingsection = ({
   iconDescription,
 }) => {
   return (
-    <Box {...sectionWrapper} className="Icon_Floating_Container">
-      <Fade bottom cascade>
-        <Box {...row} className="margin_auto flexjustifyaround">
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={AIPoweredImg}
-                  alt="AI-Powered Automation"
-                  className="icon_image"
-                />
-              </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>AI-Powered Automation</li>
-                  <li {...iconDescription}>
-                    Automate form recognition and field validation with the
-                    power of AI.
-                  </li>
-                </ul>
+    <>
+      <Box
+        {...sectionWrapper}
+        className="Icon_Floating_Container FormRecognition Benefits"
+      >
+        <Fade bottom cascade delay={120}>
+          <Box {...row} className="margin_auto flexjustifyaround">
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={AIPoweredImg}
+                    alt="AI-Powered Automation"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>AI-Powered Automation</li>
+                    <li {...iconDescription}>
+                      Automate form recognition and field validation with the
+                      power of AI.
+                    </li>
+                  </ul>
+                </Box>
               </Box>
             </Box>
-          </Box>
 
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={GreaterProductivityImg}
-                  alt="Greater Productivity"
-                  className="icon_image"
-                />
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={GreaterProductivityImg}
+                    alt="Greater Productivity"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>Greater Productivity</li>
+                    <li {...iconDescription}>
+                      Improve productivity by processing more forms in a set
+                      time-frame.
+                    </li>
+                  </ul>
+                </Box>
               </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>Greater Productivity</li>
-                  <li {...iconDescription}>
-                    Improve productivity by processing more forms in a set
-                    time-frame.
-                  </li>
-                </ul>
+            </Box>
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={Save50Img}
+                    alt="Save About 50% of Your Cost"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>Save About 50% of Your Cost</li>
+                    <li {...iconDescription}>
+                      Save 50% of the cost of processing forms by leveraging AI.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={IncredibleScalableImg}
+                    alt="Incredibly Scalable Solution"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>Incredibly Scalable Solution</li>
+                    <li {...iconDescription}>
+                      Easily Scale to demand and process forms with ease.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={ZeroInterventionImg}
+                    alt="Zero Manual Intervention"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>Zero Manual Intervention</li>
+                    <li {...iconDescription}>
+                      Eliminate the need for manual intervention across the
+                      pipeline.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={ProcessMultipleImg}
+                    alt="Process Multiple Formats"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>Process Multiple Formats</li>
+                    <li {...iconDescription}>
+                      Accurately process a multitude of formats by utilizing
+                      trained AI.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={HandwritingImg}
+                    alt="Handwriting Recognition"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>Handwriting Recognition</li>
+                    <li {...iconDescription}>
+                      Superior handwriting recognition with 95% accuracy.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={AccelerateProcessImg}
+                    alt="Accelerates Process Cycle"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>Accelerates Process Cycle</li>
+                    <li {...iconDescription}>
+                      Process scanned forms in mere seconds or minutes and not
+                      in hours.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={ErrorFreeImg}
+                    alt="Error-free Recognition"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>Error-free Recognition</li>
+                    <li {...iconDescription}>
+                      Eliminate errors with AI-driven form recognition and field
+                      validation.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col2} className="icontext_card">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col3}>
+                  <Image
+                    src={RequireOneTimeImg}
+                    alt="Requires Just One-time Training"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col7}>
+                  <ul>
+                    <li {...iconHead}>Requires Just One-time Training</li>
+                    <li {...iconDescription}>
+                      Train multitude of formats and relevant parameters just
+                      once.
+                    </li>
+                  </ul>
+                </Box>
               </Box>
             </Box>
           </Box>
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={Save50Img}
-                  alt="Save About 50% of Your Cost"
-                  className="icon_image"
-                />
-              </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>Save About 50% of Your Cost</li>
-                  <li {...iconDescription}>
-                    Save 50% of the cost of processing forms by leveraging AI.
-                  </li>
-                </ul>
-              </Box>
-            </Box>
-          </Box>
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={IncredibleScalableImg}
-                  alt="Incredibly Scalable Solution"
-                  className="icon_image"
-                />
-              </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>Incredibly Scalable Solution</li>
-                  <li {...iconDescription}>
-                    Easily Scale to demand and process forms with ease.
-                  </li>
-                </ul>
-              </Box>
-            </Box>
-          </Box>
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={ZeroInterventionImg}
-                  alt="Zero Manual Intervention"
-                  className="icon_image"
-                />
-              </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>Zero Manual Intervention</li>
-                  <li {...iconDescription}>
-                    Eliminate the need for manual intervention across the
-                    pipeline.
-                  </li>
-                </ul>
-              </Box>
-            </Box>
-          </Box>
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={ProcessMultipleImg}
-                  alt="Process Multiple Formats"
-                  className="icon_image"
-                />
-              </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>Process Multiple Formats</li>
-                  <li {...iconDescription}>
-                    Accurately process a multitude of formats by utilizing
-                    trained AI.
-                  </li>
-                </ul>
-              </Box>
-            </Box>
-          </Box>
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={HandwritingImg}
-                  alt="Handwriting Recognition"
-                  className="icon_image"
-                />
-              </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>Handwriting Recognition</li>
-                  <li {...iconDescription}>
-                    Superior handwriting recognition with 95% accuracy.
-                  </li>
-                </ul>
-              </Box>
-            </Box>
-          </Box>
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={AccelerateProcessImg}
-                  alt="Accelerates Process Cycle"
-                  className="icon_image"
-                />
-              </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>Accelerates Process Cycle</li>
-                  <li {...iconDescription}>
-                    Process scanned forms in mere seconds or minutes and not in
-                    hours.
-                  </li>
-                </ul>
-              </Box>
-            </Box>
-          </Box>
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={ErrorFreeImg}
-                  alt="Error-free Recognition"
-                  className="icon_image"
-                />
-              </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>Error-free Recognition</li>
-                  <li {...iconDescription}>
-                    Eliminate errors with AI-driven form recognition and field
-                    validation.
-                  </li>
-                </ul>
-              </Box>
-            </Box>
-          </Box>
-          <Box {...col2} className="icontext_card">
-            <Box {...row} className="flexaligncenter">
-              <Box {...col3}>
-                <Image
-                  src={RequireOneTimeImg}
-                  alt="Requires Just One-time Training"
-                  className="icon_image"
-                />
-              </Box>
-              <Box {...col7}>
-                <ul>
-                  <li {...iconHead}>Requires Just One-time Training</li>
-                  <li {...iconDescription}>
-                    Train multitude of formats and relevant parameters just
-                    once.
-                  </li>
-                </ul>
-              </Box>
-            </Box>
-          </Box>
-        </Box>
-      </Fade>
-    </Box>
+        </Fade>
+      </Box>
+    </>
   );
 };
 

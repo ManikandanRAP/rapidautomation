@@ -13,7 +13,14 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 // import './bannerother.css';
 
-const BannerSection = ({ row, title, description, button, textArea }) => {
+const BannerSection = ({
+  row,
+  title,
+  description,
+  subdescription,
+  button,
+  textArea,
+}) => {
   return (
     <>
       <BannerWrapper className="banner_container Home">
@@ -51,13 +58,24 @@ const BannerSection = ({ row, title, description, button, textArea }) => {
       </BannerWrapper>
 
       <BannerWrapper className="banner_container FormRecognition">
-        <ParticlesComponent />
+        {/* <ParticlesComponent /> */}
         <Container>
           <Box {...row}>
             <Box {...textArea}>
-              <Text {...description} content="Application" />
-              <Heading {...title} content="Form Recognition" />
-              <Box className="seperator_line" />
+              <Heading {...title} content="Form Recognition with RAP AI" />
+              <Text
+                {...description}
+                content="Expedite form processing with zero manual intervention"
+              />
+              <Text
+                {...subdescription}
+                content="Extract meaningful structured content from myriad types of forms and feed this structured data into other systems that make use of such content."
+              />
+              <Box>
+                <Link to="/" className="btn btn_secondary">
+                  <span className="btn-text">Book a Demo</span>
+                </Link>
+              </Box>
             </Box>
           </Box>
         </Container>
@@ -83,6 +101,7 @@ BannerSection.propTypes = {
   col: PropTypes.object,
   title: PropTypes.object,
   description: PropTypes.object,
+  subdescription: PropTypes.object,
   button: PropTypes.object,
 };
 
@@ -94,7 +113,7 @@ BannerSection.defaultProps = {
     justifyContent: 'center',
   },
   textArea: {
-    width: ['100%', '100%', '100%', '100%', '100%'],
+    width: ['95%', '95%', '80%', '75%', '75%'],
   },
   title: {
     fontSize: ['26px', '32px', '42px', '45px', '45px'],
@@ -102,17 +121,26 @@ BannerSection.defaultProps = {
     // color: '#0f2137',
     color: '#fff',
     letterSpacing: '-0.025em',
-    mb: ['5px', '8px', '8px', '8px', '8px'],
+    mb: ['20px', '20px', '25px', '25px', '25px'],
     lineHeight: '1.31',
-    // textAlign: 'center',
+    textAlign: 'center',
   },
   description: {
     fontSize: ['18px', '20px', '20px', '24px', '24px'],
     // color: '#343d48cc',
     color: '#fff',
     lineHeight: '1.75',
-    mb: '0',
-    // textAlign: 'center',
+    // mb: ['8px', '8px', '10px', '10px', '10px'],
+    mb: '5px',
+    textAlign: 'center',
+  },
+  subdescription: {
+    fontSize: ['14px', '14px', '14px', '16px', '16px'],
+    // color: '#343d48cc',
+    color: '#fff',
+    lineHeight: '1.75',
+    mb: ['20px', '20px', '25px', '25px', '25px'],
+    textAlign: 'center',
   },
   button: {
     title: 'Search',

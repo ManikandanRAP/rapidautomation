@@ -227,6 +227,42 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
   // END OF BACKGROUND EFFECT
+  // buttons
+  .btn.btn_secondary {
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 42px;
+    min-width: 115px;
+    max-width: 150px;
+    padding: 0 30px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    outline: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid #8bf6f2;
+    transition: all .25s ease-out;
+    .btn-text {
+      color: #fff;
+      font-size: 16px;
+      padding: 0;
+      z-index: 9;
+    }
+  }
+  .btn.btn_secondary:hover {
+    background: #8bf6f2;
+    .btn-text {
+      color: #3f20ba;
+    }
+  }
+  // btn primary 
   .btn.btn_primary {
     padding: 10px 20px;
     min-height: auto;
@@ -309,7 +345,7 @@ export const ContentWrapper = styled.div`
     left: 0;
     width: 100%;
     transition: 0.35s ease-in-out;
-    padding: 30px 0;
+    padding: 15px 0;
     .main_menu {
       margin-right: 40px;
       li {
