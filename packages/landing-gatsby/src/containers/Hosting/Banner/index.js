@@ -5,6 +5,7 @@ import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
 import Container from 'common/src/components/UI/Container';
 import ParticlesComponent from '../../Hosting/Particle';
+import ParticlesWebComponent from '../../Hosting/ParticleWeb';
 import BannerWrapper from './banner.style';
 import { Link } from 'gatsby';
 
@@ -16,7 +17,8 @@ const BannerSection = ({ row, title, description, button, textArea }) => {
   return (
     <>
       <BannerWrapper className="banner_container Home">
-        <ParticlesComponent />
+        {/* <ParticlesComponent /> */}
+        <ParticlesWebComponent />
         <Container>
           <Box {...row}>
             <Box {...textArea}>
