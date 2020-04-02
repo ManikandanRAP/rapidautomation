@@ -1,5 +1,6 @@
 #IconFloating_section .icontext_card {
-  /* background-color: rgba(255, 255, 255, 0.2); */
+  /* background-color: transparent; */
+  background-color: #fff;
   padding: 30px;
   /* box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 8px 0px; */
   box-shadow: 0 16px 64px 0 rgba(18, 21, 26, 0.24);
@@ -8,13 +9,11 @@
   /* opacity: 0; */
   transform: scale(1);
   transition: all 0.2s ease;
-  background-color: transparent;
-  color: #fff;
 }
 
-#IconFloating_section .icontext_card .icon_image {
+/* #IconFloating_section .icontext_card .icon_image {
   filter: brightness(0) invert(1);
-}
+} */
 
 #IconFloating_section .icontext_card > div {
   padding-left: 15px;
@@ -35,16 +34,17 @@
 }
 
 #IconFloating_section .icontext_card:hover {
-  /* background-image: linear-gradient(to right, #f25663, #f25663 50%, #f25a89); */
-  background-image: linear-gradient(to right, #fff, #fff 50%, #ffff);
-  border-color: #fff;
+  background-image: linear-gradient(to right, #f25663, #f25663 50%, #f25a89);
+  /* background-image: linear-gradient(to right, #fff, #fff 50%, #ffff); */
+  border-color: #f25a89;
   color: inherit;
   transform: scale(1.02);
 }
 
 #IconFloating_section .icontext_card:hover .icon_image {
-  filter: none;
-  filter: unset;
+  /* filter: none; */
+  /* filter: unset; */
+  filter: brightness(0) invert(1);
 }
 
 #IconFloating_section .icon_image {
