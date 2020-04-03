@@ -53,10 +53,10 @@ const Footer = ({
             />
             <Box className="socialmedia_icons flexbox flexaligncenter flexrow">
               <Link to="/">
-                <i className="fa fa-twitter-square" />
+                <i className="fa fa-twitter" />
               </Link>
               <Link to="/">
-                <i className="fa fa-facebook-square" />
+                <i className="fa fa-facebook-official" />
               </Link>
               <Link to="/">
                 <i className="fa fa-linkedin-square" />
@@ -64,7 +64,7 @@ const Footer = ({
             </Box>
           </Box>
           {/* End of footer logo column */}
-          <Box {...colTwo} className="flexjustifycenter">
+          <Box {...colTwo} className="colTwo flexjustifycenter">
             {Data.hostingJson.FOOTER_WIDGET.map((widget, index) => (
               <Box key={`footer-widget-${index}`}>
                 <Heading content={widget.title} {...titleStyle} />
@@ -91,6 +91,7 @@ const Footer = ({
                     Intelligent Process Automation (IPA)
                   </a>
                 </ListItem>
+                <hr />
                 <ListItem>
                   <a href="#" className="ListItem">
                     AI for Invoice Processing
@@ -129,16 +130,13 @@ Footer.propTypes = {
   logoStyle: PropTypes.object,
 };
 
-// Footer default style
 Footer.defaultProps = {
-  // Footer row default style
   row: {
     flexBox: true,
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
   },
-  // Footer col one style
   colOne: {
     width: [1, '40%', '40%', '30%'],
     mt: [0, '0px'],
@@ -146,8 +144,8 @@ Footer.defaultProps = {
     pl: ['15px', 0],
     pr: ['15px', '15px', 0],
   },
-  // Footer col two style
   colTwo: {
+    className: 'colTwo',
     width: [1, '30%', '30%', '35%'],
     flexBox: true,
     flexWrap: 'wrap',
@@ -155,26 +153,22 @@ Footer.defaultProps = {
   colThree: {
     width: [1, '30%', '30%', '35%'],
   },
-  // Footer col default style
   col: {
     width: ['100%', '50%', '50%', '25%'],
     pl: '15px',
     pr: '15px',
     mb: '30px',
   },
-  // widget title default style
   titleStyle: {
     color: '#343d48',
     fontSize: '16px',
     fontWeight: '700',
     mb: '10px',
   },
-  // Default logo size
   logoStyle: {
     width: '130px',
     mb: '15px',
   },
-  // widget text default style
   textStyle: {
     color: '#0f2137',
     fontSize: '16px',

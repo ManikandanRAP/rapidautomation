@@ -34,6 +34,14 @@ const FooterWrapper = styled.footer`
     @media (min-width: 576px) {
       background-image: url(${FooterImage});
     }
+    @media (max-width: 576px) {
+      .colTwo.flexjustifycenter {
+        justify-content: flex-start;
+      }
+      .colTwo.flexjustifycenter {
+        margin-bottom: 20px;
+      }
+    }
     @media (max-width: 990px) {
       padding-bottom: 40px;
     }

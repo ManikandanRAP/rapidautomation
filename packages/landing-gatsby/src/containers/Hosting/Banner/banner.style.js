@@ -46,7 +46,12 @@ const BannerWrapper = styled.section`
     height: 100%;
     // background-color: rgba(5, 47, 74, 0.67);
     // background-image: linear-gradient(128deg, #6428e2, #510bdf);
-    background-image: linear-gradient(to bottom, #360fca, #311c87 80%, #5012d9);
+    // background-image: linear-gradient(to bottom, #360fca, #311c87 80%, #5012d9);
+    background-image: linear-gradient(
+      180deg,
+      #081275 15%,
+      rgba(8, 18, 117, 0.75)
+    );
     opacity: 0.85;
     position: absolute;
     left: 0;
