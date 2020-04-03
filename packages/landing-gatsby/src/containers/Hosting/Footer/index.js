@@ -42,9 +42,9 @@ const Footer = ({
         <Box className="row" {...row}>
           <Box {...colOne}>
             <Logo
-              href="#"
+              href="/"
               logoSrc={LogoImage}
-              title="Hosting"
+              title="Rapid Acceleration Partners"
               logoStyle={logoStyle}
             />
             <Text

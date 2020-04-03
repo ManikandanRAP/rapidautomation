@@ -8,7 +8,8 @@
   border-radius: 8px;
   /* opacity: 0; */
   transform: scale(1);
-  transition: transform 0.3s ease-in;
+  color: inherit;
+  transition: all 0.4s ease;
   transition-delay: 0.1s;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -25,8 +26,8 @@
   border-radius: 8px;
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.3s ease-in;
-  transition-delay: 0.1s;
+  transition: opacity 0.4s linear;
+  /* transition-timing-function: cubic-bezier(0.5, 1.0, 1.0, 0.1); */
 }
 
 #IconFloating_section .icontext_card:hover {
@@ -64,10 +65,30 @@
 }
 
 #IconFloating_section .icontext_card_nobg .iconHead {
+  position: relative;
   text-align: center;
   color: #fff;
   opacity: 0.7;
   padding: 8px 0;
+  padding-top: 12px;
+}
+
+#IconFloating_section .icontext_card_nobg .iconHead::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  max-width: 35px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgba(242, 90, 137, 0.5);
+  border-radius: 100%;
+  transform: skewX(10deg);
+  transform: scale(1);
+  transition: transform 0.35s;
+  transition-timing-function: cubic-bezier(0.12, 0.845, 0.305, 1);
 }
 
 #IconFloating_section .icontext_card_nobg .icon_image {
@@ -81,6 +102,9 @@
 
 #IconFloating_section .icontext_card_nobg:hover .icon_image {
   transform: translateY(-16px) rotate(8deg);
+}
+#IconFloating_section .icontext_card_nobg:hover .iconHead::before {
+  transform: scale(0.75);
 }
 
 /* #IconFloating_section .icontext_card_nobg .icon_image::before {

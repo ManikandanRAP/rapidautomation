@@ -335,15 +335,20 @@ export const GlobalStyle = createGlobalStyle`
     -o-transition: all 0.4s ease-out 0s;
     transition: all scaleY 0.4s ease-out 0s;
   }
-  .btn.btn_primary:hover:after {
-    transform: scaleY(1);
-    // z-index: 1;
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    background-color: #73c2c2;
-    -webkit-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    -o-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  .btn.btn_primary:hover {
+    .btn-text {
+      color: rgb(63, 32, 186) !important;
+    }
+    &::after {
+      transform: scaleY(1);
+      // z-index: 1;
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      background-color: #73c2c2;
+      -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      -o-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
   }
 `;
 
@@ -526,6 +531,9 @@ export const ContentWrapper = styled.div`
     .glide__slide--active .pricing_table {
       box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
       border: 0;
+    }
+    .hosting_navbar {
+      padding: 10px 0;
     }
   }
 `;
