@@ -2708,6 +2708,10 @@
 #desktopmenu ul a {
   display: block;
 }
+#desktopmenu .customItem {
+  padding: 0 15px;
+  margin-bottom: 2px;
+}
 #desktopmenu ul a,
 #desktopmenu ul span {
   padding: 10px 20px;
@@ -2718,6 +2722,7 @@
 }
 #desktopmenu .dropdownMenu {
   position: absolute;
+  top: 90px;
   left: 0;
   right: 0;
   max-width: 917px;
@@ -2725,6 +2730,7 @@
   background-color: #fff;
   border-top: 2px solid red;
   border-radius: 4px;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.12);
 }
 #desktopmenu .dropdownMenu * {
   color: #212121;
@@ -2734,6 +2740,24 @@
 #desktopmenu .dropdownMenu3,
 #desktopmenu .dropdownMenu4 {
   display: none;
+}
+#desktopmenu .dropdownMenu3 {
+  left: 20%;
+  width: 100%;
+  max-width: 375px;
+}
+#desktopmenu .dropdownMenu4 {
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+}
+#desktopmenu .dropdownMenu4 ul {
+  width: 100%;
+}
+#desktopmenu .dropdownMenu4 li {
+  padding-left: 10px;
 }
 #desktopmenu .flexcolumnprops {
   flex-direction: column;
@@ -2756,6 +2780,12 @@
   margin-left: 5px;
   margin-bottom: 8px;
   vertical-align: middle;
+}
+#desktopmenu .mainmenuhead,
+#desktopmenu .mainmenuhead2 {
+  display: inline-block;
+  padding: 35px 10px;
+  cursor: pointer;
 }
 #desktopmenu .mainmenuhead:hover nav {
   display: flex;
@@ -2786,11 +2816,39 @@
 #desktopmenu .dropdownMenu2 li {
   width: 33%;
 }
-#desktopmenu .btn {
+#desktopmenu .btn.customItem {
   display: inline-block;
   background-color: #2981c2;
   vertical-align: middle;
   margin: 20px 20px 32px;
+  padding: 10px;
+}
+#desktopmenu .btn.btn_secondary {
+  height: 38px;
+  min-width: 90px;
+  max-width: 120px;
+}
+#desktopmenu .btn.btn_secondary:hover .btn-text {
+  color: #3f20ba;
+}
+.sticky-nav-active #desktopmenu .btn.btn_secondary {
+  background-color: #3f20ba;
+  border-color: #3f20ba;
+}
+.sticky-nav-active #desktopmenu .btn.btn_secondary .btn-text {
+  color: #fff;
+}
+.sticky-nav-active #desktopmenu .btn.btn_secondary:hover {
+  background-color: #8bf6f2;
+  border-color: #8bf6f2;
+}
+.sticky-nav-active #desktopmenu .btn.btn_secondary:hover .btn-text {
+  color: #3f20ba;
+}
+@media only screen and (max-width: 991px) {
+  #desktopmenu {
+    display: none;
+  }
 }
 .Mobile_menu_container {
   transition: all 0.4s ease;
@@ -2986,20 +3044,19 @@
   direction: rtl;
 }
 .container.cta_size_container {
-  background-color: #0d70b6;
-  background-image: linear-gradient(90deg, #4e54c8, #8f94fb);
+  background-image: linear-gradient(90deg, #081275 70%, rgba(8, 18, 117, 0.8));
 }
-.container.cta_size_container button {
-  background-color: #fff;
+.container.cta_size_container .btn.btn_primary {
+  background-color: #5359cc;
 }
-.container.cta_size_container button .btn-text {
-  color: #000;
-}
-.container.cta_size_container button:hover {
-  background-color: #73c2c2;
-}
-.container.cta_size_container button:hover .btn-text {
+.container.cta_size_container .btn.btn_primary .btn-text {
   color: #fff;
+}
+.container.cta_size_container .btn.btn_primary:hover:after {
+  background-color: #8bf6f2;
+}
+.container.cta_size_container .btn.btn_primary:hover .btn-text {
+  color: #3f20ba !important;
 }
 .Cta_container {
   color: #fff;
@@ -3027,13 +3084,78 @@
   }
 }
 #IconFloating_section .icontext_card {
+  position: relative;
   background-color: #fff;
   padding: 30px;
   box-shadow: 0 16px 64px 0 rgba(18, 21, 26, 0.24);
   border-radius: 8px;
-  border: 1px solid #dee2e7;
   transform: scale(1);
-  transition: all 0.2s ease;
+  transition: transform 0.3s ease-in;
+  transition-delay: 0.1s;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#IconFloating_section .icontext_card:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, #f25663, #f25663 50%, #f25a89);
+  border-radius: 8px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.1s;
+}
+#IconFloating_section .icontext_card:hover {
+  color: #fff;
+  transform: scale(1.02);
+}
+#IconFloating_section .icontext_card:hover:before {
+  opacity: 1;
+}
+#IconFloating_section .icontext_card:hover .icon_image {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+#IconFloating_section .icontext_card.icontext_card_whitebg {
+  box-shadow: 0 16px 32px 0 rgba(18, 21, 26, 0.12);
+}
+#IconFloating_section .icontext_card.icontext_card_whitebg:hover {
+  box-shadow: 0 16px 64px 0 rgba(18, 21, 26, 0.24);
+}
+#IconFloating_section .icontext_card.icontext_card_whitebg li {
+  text-align: center;
+}
+#IconFloating_section .icontext_card.icontext_card_whitebg li img {
+  margin: 0 auto;
+}
+#IconFloating_section .icontext_card_nobg {
+  background-color: transparent;
+  margin: 15px;
+}
+#IconFloating_section .icontext_card_nobg .iconHead {
+  text-align: center;
+  color: #fff;
+  opacity: 0.7;
+  padding: 8px 0;
+}
+#IconFloating_section .icontext_card_nobg .icon_image {
+  max-width: 80px;
+  margin: 0 auto;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  position: relative;
+  transition: transform 0.35s;
+  transition-timing-function: cubic-bezier(0.12, 0.845, 0.305, 1);
+}
+#IconFloating_section .icontext_card_nobg:hover .icon_image {
+  transform: translateY(-16px) rotate(8deg);
+}
+#IconFloating_section .icontext_card.mr3 {
+  margin-right: 3%;
 }
 #IconFloating_section .icontext_card > div {
   padding-left: 15px;
@@ -3049,16 +3171,6 @@
 #IconFloating_section .iconDescription {
   font-size: 14px;
 }
-#IconFloating_section .icontext_card:hover {
-  background-image: linear-gradient(90deg, #f25663, #f25663 50%, #f25a89);
-  border-color: #f25a89;
-  color: #fff;
-  transform: scale(1.02);
-}
-#IconFloating_section .icontext_card:hover .icon_image {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
-}
 #IconFloating_section .icon_image {
   width: 100%;
   height: 100%;
@@ -3071,7 +3183,9 @@
 .Icon_Floating_Container {
   display: none;
 }
-.FormRecognitionPage .Icon_Floating_Container.FormRecognition.Benefits {
+.FormRecognitionPage .Icon_Floating_Container.FormRecognition.Benefits,
+.HomePage .applications_container .Icon_Floating_Container.Home.Applications,
+.HomePage .maxproeff_container .Icon_Floating_Container.Home.MaxProEff {
   display: block;
 }
 #info_application .InfoBanner_Image_container {
@@ -3081,8 +3195,10 @@
   padding: 15px;
   width: 100%;
   height: 100%;
-  max-height: 350px;
-  max-width: 500px;
+  max-height: 901px;
+  max-width: 901px;
+  -o-object-fit: contain;
+  object-fit: contain;
   margin: 0 auto;
 }
 #info_application .multi_sections_container {
@@ -3100,6 +3216,33 @@
 }
 @media only screen and (max-width: 575px) {
   #info_application .InfoBanner_Image_container {
+    padding: 15px;
+  }
+}
+#info_other .InfoBanner_Image_container {
+  background-color: transparent;
+}
+#info_other .InfoBanner_Image_container img {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#info_other .multi_sections_container {
+  display: none;
+}
+.HomePage #info_other .multi_sections_container.Home_info_container {
+  display: block;
+}
+@media only screen and (min-width: 992px) {
+  #info_other .info_order_change {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #info_other .InfoBanner_Image_container {
     padding: 15px;
   }
 }
@@ -3146,33 +3289,6 @@
 .IT_info_container .benefits_container .IT_Iconhover.benefits,
 .IT_info_container .capability_container .IT_Iconhover.capability {
   display: block;
-}
-#info_other .InfoBanner_Image_container {
-  background-color: transparent;
-}
-#info_other .InfoBanner_Image_container img {
-  padding: 15px;
-  width: 100%;
-  height: 100%;
-  max-height: 350px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-#info_other .multi_sections_container {
-  display: none;
-}
-.HomePage #info_other .multi_sections_container.Home_info_container {
-  display: block;
-}
-@media only screen and (min-width: 992px) {
-  #info_other .info_order_change {
-    order: 2;
-  }
-}
-@media only screen and (max-width: 575px) {
-  #info_other .InfoBanner_Image_container {
-    padding: 15px;
-  }
 }
 #info_solution .InfoBanner_Image_container {
   background-color: transparent;
