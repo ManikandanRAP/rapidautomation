@@ -223,7 +223,7 @@ const Maindeskmenu1 = button => (
         <span>
           Solutions <i className="fa fa-chevron-down" />
         </span>
-        <nav className="dropdownMenu dropdownMenu3 flexboxprops flexjustifystartprops">
+        <nav className="dropdownMenu dropdownMenu3 flexboxprops flexjustifyaround">
           <ul>
             <li className="text_bold spacingmenu">Functions</li>
             <li>
@@ -244,15 +244,25 @@ const Maindeskmenu1 = button => (
           </ul>
         </nav>
       </li>
-      <li>
+      <li className="mainmenuhead">
         <Link className="customItem">About</Link>
       </li>
-      <li className="mainmenuhead">
+      <li className="mainmenuhead position_relative">
         <span>
           Resources <i className="fa fa-chevron-down" />
         </span>
-        <nav className="dropdownMenu dropdownMenu4">
+        {/* <nav className="dropdownMenu dropdownMenu4">
           <ul className="flexboxprops flexjustifystartprops">
+            <li className="text_bold">
+              <Link>Blog</Link>
+            </li>
+            <li className="text_bold">
+              <Link>In The News</Link>
+            </li>
+          </ul>
+        </nav> */}
+        <nav className="dropdownMenu dropdownMenu4">
+          <ul className="">
             <li className="text_bold">
               <Link>Blog</Link>
             </li>

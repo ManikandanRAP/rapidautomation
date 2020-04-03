@@ -58,7 +58,6 @@ const InfoHomeSection = ({
                 content="The RAP AI platform is a cutting-edge, AI-powered content intelligence platform that automates extraction of structured data from unstructured content – ranging from emails, images, support tickets, documents, contracts, checks, pretty much anything."
               />
             </Box>
-            <Box className="empty_space20" />
             <IconFloatingSection />
             <Box className="empty_space40" />
           </Fade>
@@ -83,7 +82,6 @@ const InfoHomeSection = ({
                   />
                 </Box>
               </Fade>
-              <Box className="empty_space20" />
               <IconFloatingSection />
               <Box className="empty_space40" />
             </Container>

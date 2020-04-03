@@ -121,7 +121,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   // own css
-
+  .position_relative {
+    position: relative;
+  }
   .text_center {
     text-align: center;
   }
@@ -363,7 +365,8 @@ export const ContentWrapper = styled.div`
     .hosting_navbar {
       background: #fff;
       box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);
-      padding: 15px 0;
+      // padding: 15px 0;
+      padding: 0;
     }
     .Logo_image_light {
       display: none;
@@ -379,7 +382,8 @@ export const ContentWrapper = styled.div`
     left: 0;
     width: 100%;
     transition: 0.35s ease-in-out;
-    padding: 15px 0;
+    // padding: 15px 0;
+    padding: 0;
     .main_menu {
       margin-right: 40px;
       li {

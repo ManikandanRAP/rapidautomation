@@ -114,9 +114,10 @@ const InfoApplicationSection = ({
                   className="text_center"
                   content="Benefits"
                 /> */}
+                <Box className="empty_space20" />
                 <IconFloatingsection />
+                <Box className="empty_space20" />
               </Fade>
-              <Box className="empty_space20" />
             </Box>
           </Container>
         </Box>

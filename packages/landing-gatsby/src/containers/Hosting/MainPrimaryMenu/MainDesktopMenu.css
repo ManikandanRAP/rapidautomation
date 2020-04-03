@@ -13,6 +13,7 @@
 }
 
 #desktopmenu .customItem {
+  padding: 0 15px;
   margin-bottom: 2px;
 }
 
@@ -27,6 +28,7 @@
 
 #desktopmenu .dropdownMenu {
   position: absolute;
+  top: 90px;
   left: 0;
   right: 0;
   /* max-width: 1170px; */
@@ -36,6 +38,7 @@
   background-color: #fff;
   border-top: 2px solid red;
   border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
 }
 
 #desktopmenu .dropdownMenu * {
@@ -47,6 +50,25 @@
 #desktopmenu .dropdownMenu4,
 #desktopmenu .dropdownMenu2 {
   display: none;
+}
+
+#desktopmenu .dropdownMenu3 {
+  left: 20%;
+  width: 100%;
+  max-width: 375px;
+}
+#desktopmenu .dropdownMenu4 {
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+}
+#desktopmenu .dropdownMenu4 ul {
+  width: 100%;
+}
+#desktopmenu .dropdownMenu4 li {
+  padding-left: 10px;
 }
 
 #desktopmenu .flexcolumnprops {
@@ -75,6 +97,12 @@
   vertical-align: middle;
 }
 
+#desktopmenu .mainmenuhead,
+#desktopmenu .mainmenuhead2 {
+  display: inline-block;
+  padding: 35px 10px;
+  cursor: pointer;
+}
 #desktopmenu .mainmenuhead:hover nav {
   display: flex;
 }
@@ -114,6 +142,7 @@
   vertical-align: middle;
   margin: 20px;
   margin-bottom: 32px;
+  padding: 10px;
 }
 
 #desktopmenu .btn.btn_secondary {

@@ -1,23 +1,61 @@
 #IconFloating_section .icontext_card {
   /* background-color: transparent; */
+  position: relative;
   background-color: #fff;
   padding: 30px;
   /* box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 8px 0px; */
   box-shadow: 0 16px 64px 0 rgba(18, 21, 26, 0.24);
   border-radius: 8px;
-  border: 1px solid #dee2e7;
   /* opacity: 0; */
   transform: scale(1);
-  transition: transform 0.1s ease-in;
+  transition: transform 0.3s ease-in;
+  transition-delay: 0.1s;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#IconFloating_section .icontext_card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #f25663, #f25663 50%, #f25a89);
+  border-radius: 8px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.1s;
+}
+
+#IconFloating_section .icontext_card:hover {
+  color: #fff;
+  transform: scale(1.02);
+}
+#IconFloating_section .icontext_card:hover::before {
+  opacity: 1;
+}
+
+#IconFloating_section .icontext_card:hover .icon_image {
+  /* filter: none; */
+  /* filter: unset; */
+  filter: brightness(0) invert(1);
 }
 
 #IconFloating_section .icontext_card.icontext_card_whitebg {
   box-shadow: 0 16px 32px 0 rgba(18, 21, 26, 0.12);
-  border-color: #fff;
 }
 
 #IconFloating_section .icontext_card.icontext_card_whitebg:hover {
   box-shadow: 0 16px 64px 0 rgba(18, 21, 26, 0.24);
+}
+
+#IconFloating_section .icontext_card.icontext_card_whitebg li {
+  text-align: center;
+}
+#IconFloating_section .icontext_card.icontext_card_whitebg li img {
+  margin: 0 auto;
 }
 
 #IconFloating_section .icontext_card_nobg {
@@ -81,20 +119,6 @@
 
 #IconFloating_section .iconDescription {
   font-size: 14px;
-}
-
-#IconFloating_section .icontext_card:hover {
-  background-image: linear-gradient(to right, #f25663, #f25663 50%, #f25a89);
-  /* background-image: linear-gradient(to right, #fff, #fff 50%, #ffff); */
-  border-color: #f25a89;
-  color: #fff;
-  transform: scale(1.02);
-}
-
-#IconFloating_section .icontext_card:hover .icon_image {
-  /* filter: none; */
-  /* filter: unset; */
-  filter: brightness(0) invert(1);
 }
 
 #IconFloating_section .icon_image {

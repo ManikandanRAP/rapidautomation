@@ -7,6 +7,8 @@ import Heading from 'common/src/components/Heading';
 import Container from 'common/src/components/UI/Container';
 import Image from 'common/src/components/Image';
 
+import { Link } from 'gatsby';
+
 import sample from 'common/src/assets/image/hosting/author-1.jpg';
 
 import AIPoweredImg from 'common/src/assets/image/hosting/Pages/Form Recognition/AI-Powered Automation.svg';
@@ -251,6 +253,109 @@ const IconFloatingsection = ({
         <Fade bottom cascade delay={120}>
           <Box {...row} className="margin_auto flexjustifyaround">
             <Box {...col30} className="icontext_card icontext_card_whitebg">
+              <Box className="flexaligncenter">
+                <ul>
+                  <li>
+                    <Image
+                      src={AccelerateProcessImg}
+                      alt="Accelerate Process"
+                      className="icon_image"
+                    />
+                  </li>
+                  <li {...iconHead}>Accelerate Processes</li>
+                  <li {...iconsubHead}>From days to minutes</li>
+                  <li {...iconDescription}>
+                    Leverage automation for faster processes with higher
+                    operational efficiency and accuracy.
+                  </li>
+                </ul>
+              </Box>
+            </Box>
+            <Box {...col30} className="icontext_card icontext_card_whitebg">
+              <Box className="flexaligncenter">
+                <ul>
+                  <li {...iconHead}>
+                    <Image
+                      src={IncredibleScalableImg}
+                      alt="Unlimit Capacity"
+                      className="icon_image"
+                    />
+                  </li>
+                  <li {...iconHead}>Scale-up with ease</li>
+                  <li {...iconsubHead}>Unlimit Capacity</li>
+                  <li {...iconDescription}>
+                    Augment capacity with automation and scale-up volumes with
+                    greater accuracy and efficiency.
+                  </li>
+                </ul>
+              </Box>
+            </Box>
+            <Box {...col30} className="icontext_card icontext_card_whitebg">
+              <Box className="flexaligncenter">
+                <ul>
+                  <li>
+                    <Image
+                      src={Save50Img}
+                      alt="Reduce operation costs"
+                      className="icon_image"
+                    />
+                  </li>
+                  <li {...iconHead}>Reduce Operating costs</li>
+                  <li {...iconsubHead}>30% – 70% Reduction</li>
+                  <li {...iconDescription}>
+                    Cut down Opex with automation powered by AI that provides
+                    accurate results faster at lesser cost.
+                  </li>
+                </ul>
+              </Box>
+            </Box>
+          </Box>
+          <Box {...row} className="flexjustifycenter">
+            <Box {...col30} className="icontext_card icontext_card_whitebg mr3">
+              <Box className="flexaligncenter">
+                <ul>
+                  <li>
+                    <Image
+                      src={ErrorFreeImg}
+                      alt="Accuary"
+                      className="icon_image"
+                    />
+                  </li>
+                  <li {...iconHead}>Enhance Accuracy</li>
+                  <li {...iconsubHead}>Reduction in errors</li>
+                  <li {...iconDescription}>
+                    Guaranteed accurate outputs and results through intelligent
+                    automation that minimizes errors.
+                  </li>
+                </ul>
+              </Box>
+            </Box>
+            <Box {...col30} className="icontext_card icontext_card_whitebg">
+              <Box className="flexaligncenter">
+                <ul>
+                  <li>
+                    <Image
+                      src={ZeroInterventionImg}
+                      alt="Free Up Critical Resources"
+                      className="icon_image"
+                    />
+                  </li>
+                  <li {...iconHead}>Free Up Critical Resources</li>
+                  <li {...iconsubHead}>More man hours for critical tasks</li>
+                  <li {...iconDescription}>
+                    Free up critical resources for higher value-add tasks rather
+                    than repetitive low-value ones.
+                  </li>
+                </ul>
+              </Box>
+            </Box>
+          </Box>
+        </Fade>
+
+        {/* left right section */}
+        {/* <Fade bottom cascade delay={120}>
+          <Box {...row} className="margin_auto flexjustifyaround">
+            <Box {...col30} className="icontext_card icontext_card_whitebg">
               <Box {...row} className="flexaligncenter">
                 <Box {...col30}>
                   <Image
@@ -314,7 +419,6 @@ const IconFloatingsection = ({
               </Box>
             </Box>
           </Box>
-          <Box className="empty_space30" />
           <Box {...row} className="flexjustifycenter">
             <Box {...col30} className="icontext_card icontext_card_whitebg mr3">
               <Box {...row} className="flexaligncenter">
@@ -359,7 +463,8 @@ const IconFloatingsection = ({
               </Box>
             </Box>
           </Box>
-        </Fade>
+        </Fade> */}
+        {/* left right section */}
       </Box>
       {/* end of home maximum process efficiency */}
       <Box
@@ -370,7 +475,7 @@ const IconFloatingsection = ({
           <Box {...textArea}>
             <Box {...row} className="margin_auto flexjustifyaround">
               <Box {...col20} className="icontext_card_nobg">
-                <Box>
+                <Link to="/">
                   <ul>
                     <li>
                       <Image
@@ -381,10 +486,10 @@ const IconFloatingsection = ({
                     </li>
                     <li {...iconHead}>Form Recognition</li>
                   </ul>
-                </Box>
+                </Link>
               </Box>
               <Box {...col20} className="icontext_card_nobg">
-                <Box>
+                <Link to="/">
                   <ul>
                     <li>
                       <Image
@@ -395,10 +500,10 @@ const IconFloatingsection = ({
                     </li>
                     <li {...iconHead}>Intelligent Email Response</li>
                   </ul>
-                </Box>
+                </Link>
               </Box>
               <Box {...col20} className="icontext_card_nobg">
-                <Box>
+                <Link to="/">
                   <ul>
                     <li>
                       <Image
@@ -409,10 +514,10 @@ const IconFloatingsection = ({
                     </li>
                     <li {...iconHead}>Check Recognition</li>
                   </ul>
-                </Box>
+                </Link>
               </Box>
               <Box {...col20} className="icontext_card_nobg">
-                <Box>
+                <Link to="/">
                   <ul>
                     <li>
                       <Image
@@ -423,10 +528,10 @@ const IconFloatingsection = ({
                     </li>
                     <li {...iconHead}>Quote Processing</li>
                   </ul>
-                </Box>
+                </Link>
               </Box>
               <Box {...col20} className="icontext_card_nobg">
-                <Box>
+                <Link to="/">
                   <ul>
                     <li>
                       <Image
@@ -437,10 +542,10 @@ const IconFloatingsection = ({
                     </li>
                     <li {...iconHead}>Case Deflection</li>
                   </ul>
-                </Box>
+                </Link>
               </Box>
               <Box {...col20} className="icontext_card_nobg">
-                <Box>
+                <Link to="/">
                   <ul>
                     <li>
                       <Image
@@ -451,10 +556,10 @@ const IconFloatingsection = ({
                     </li>
                     <li {...iconHead}>Invoice Processing</li>
                   </ul>
-                </Box>
+                </Link>
               </Box>
               <Box {...col20} className="icontext_card_nobg">
-                <Box>
+                <Link to="/">
                   <ul>
                     <li>
                       <Image
@@ -465,10 +570,10 @@ const IconFloatingsection = ({
                     </li>
                     <li {...iconHead}>Lease Abstraction</li>
                   </ul>
-                </Box>
+                </Link>
               </Box>
               <Box {...col20} className="icontext_card_nobg">
-                <Box>
+                <Link to="/">
                   <ul>
                     <li>
                       <Image
@@ -479,7 +584,7 @@ const IconFloatingsection = ({
                     </li>
                     <li {...iconHead}>ID Verification</li>
                   </ul>
-                </Box>
+                </Link>
               </Box>
             </Box>
           </Box>
