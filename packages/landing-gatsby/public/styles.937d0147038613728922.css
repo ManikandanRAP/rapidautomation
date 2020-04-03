@@ -2754,6 +2754,7 @@
 #desktopmenu i {
   font-size: 12px;
   margin-left: 5px;
+  margin-bottom: 8px;
   vertical-align: middle;
 }
 #desktopmenu .mainmenuhead:hover nav {
@@ -2986,7 +2987,7 @@
 }
 .container.cta_size_container {
   background-color: #0d70b6;
-  background-image: linear-gradient(90deg, #06324e, #0d70b6);
+  background-image: linear-gradient(90deg, #4e54c8, #8f94fb);
 }
 .container.cta_size_container button {
   background-color: #fff;
@@ -3028,16 +3029,18 @@
 #IconFloating_section .icontext_card {
   background-color: #fff;
   padding: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 64px 0 rgba(18, 21, 26, 0.24);
   border-radius: 8px;
   border: 1px solid #dee2e7;
+  transform: scale(1);
+  transition: all 0.2s ease;
 }
 #IconFloating_section .icontext_card > div {
   padding-left: 15px;
   padding-right: 15px;
 }
 #IconFloating_section .icontext_card li {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 #IconFloating_section .iconHead {
   font-size: 18px;
@@ -3048,8 +3051,9 @@
 }
 #IconFloating_section .icontext_card:hover {
   background-image: linear-gradient(90deg, #f25663, #f25663 50%, #f25a89);
-  border-color: #f25663;
+  border-color: #f25a89;
   color: #fff;
+  transform: scale(1.02);
 }
 #IconFloating_section .icontext_card:hover .icon_image {
   -webkit-filter: brightness(0) invert(1);
@@ -3063,6 +3067,12 @@
   -o-object-fit: contain;
   object-fit: contain;
   padding: 10px;
+}
+.Icon_Floating_Container {
+  display: none;
+}
+.FormRecognitionPage .Icon_Floating_Container.FormRecognition.Benefits {
+  display: block;
 }
 #info_application .InfoBanner_Image_container {
   background-color: transparent;
