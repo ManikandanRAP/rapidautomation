@@ -86,12 +86,11 @@ const Footer = ({
               <Heading content="Recent Posts" {...titleStyle} />
               <List>
                 <ListItem>
-                  <a href="#" className="ListItem">
+                  <a href="#" className="customItem ListItem">
                     Superior Customer Experience through Next-Generation AI &
                     Intelligent Process Automation (IPA)
                   </a>
                 </ListItem>
-                <hr />
                 <ListItem>
                   <a href="#" className="ListItem">
                     AI for Invoice Processing

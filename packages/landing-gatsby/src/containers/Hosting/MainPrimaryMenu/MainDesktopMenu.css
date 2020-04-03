@@ -12,6 +12,10 @@
   display: block;
 }
 
+#desktopmenu .customItem {
+  margin-bottom: 2px;
+}
+
 #desktopmenu ul a,
 #desktopmenu ul span {
   padding: 10px 20px;
@@ -104,12 +108,37 @@
   width: 33%;
 }
 
-#desktopmenu .btn {
+#desktopmenu .btn.customItem {
   display: inline-block;
   background-color: #2981c2;
   vertical-align: middle;
   margin: 20px;
   margin-bottom: 32px;
+}
+
+#desktopmenu .btn.btn_secondary {
+  height: 38px;
+  min-width: 90px;
+  max-width: 120px;
+}
+
+#desktopmenu .btn.btn_secondary:hover .btn-text {
+  color: #3f20ba;
+}
+
+.sticky-nav-active #desktopmenu .btn.btn_secondary {
+  background-color: #3f20ba;
+  border-color: #3f20ba;
+}
+.sticky-nav-active #desktopmenu .btn.btn_secondary .btn-text {
+  color: #fff;
+}
+.sticky-nav-active #desktopmenu .btn.btn_secondary:hover {
+  background-color: #8bf6f2;
+  border-color: #8bf6f2;
+}
+.sticky-nav-active #desktopmenu .btn.btn_secondary:hover .btn-text {
+  color: #3f20ba;
 }
 
 /* #desktopmenu .dropdownMenu ul li:hover {

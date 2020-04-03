@@ -12,7 +12,8 @@ import Container from 'common/src/components/UI/Container';
 import { Link } from 'gatsby';
 
 // import IconParticleSection from '../IconTextParticle';
-import IconTextHoverSection from '../IconTextHover';
+import IconFloatingSection from '../IconFloating';
+import BgImageDark from '../BgImagedark';
 
 import sample from 'common/src/assets/image/hosting/author-3.jpg';
 
@@ -42,6 +43,55 @@ const InfoHomeSection = ({
   return (
     <Box {...sectionWrapper}>
       <Box className="multi_sections_container Home_info_container">
+        <Container className="maxproeff_container">
+          <Fade bottom cascade>
+            <Box className="empty_space20" />
+            <Box {...textArea}>
+              <Heading
+                {...title}
+                content="Maximize Process Efficiency"
+                className="text_center"
+              />
+              <Text
+                {...description}
+                className="text_justify"
+                content="The RAP AI platform is a cutting-edge, AI-powered content intelligence platform that automates extraction of structured data from unstructured content – ranging from emails, images, support tickets, documents, contracts, checks, pretty much anything."
+              />
+            </Box>
+            <Box className="empty_space20" />
+            <IconFloatingSection />
+            <Box className="empty_space40" />
+          </Fade>
+        </Container>
+
+        <Box className="applications_container">
+          <Box className="section_background_blue">
+            <BgImageDark />
+            <Container>
+              <Fade bottom cascade>
+                <Box className="empty_space20" />
+                <Box {...textArea}>
+                  <Heading
+                    {...title}
+                    content="Applications"
+                    className="text_center"
+                  />
+                  <Text
+                    {...description}
+                    className="text_center text_white"
+                    content="Innovation through automation is key to successful business transformation. To this end, we have a multitude of applications that you can choose from, powered by EyeMagic, ResponseGenie or both."
+                  />
+                </Box>
+              </Fade>
+              <Box className="empty_space20" />
+              <IconFloatingSection />
+              <Box className="empty_space40" />
+            </Container>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* <Box className="multi_sections_container Home_info_container">
         <Container className="platform_container">
           <Fade bottom cascade>
             <Box className="empty_space20" />
@@ -133,6 +183,7 @@ const InfoHomeSection = ({
           </Container>
         </Box>
       </Box>
+      */}
       {/* end of Home page */}
     </Box>
   );
@@ -208,7 +259,8 @@ InfoHomeSection.defaultProps = {
     width: ['100%', '100%', '70%', '70%', '70%'],
   },
   textArea: {
-    width: ['100%', '100%', '100%', '49%', '49%'],
+    width: ['95%', '95%', '85%', '85%', '85%'],
+    margin: '0 auto',
   },
   contentArea: {
     width: ['100%', '100%', '80%', '80%', '80%'],

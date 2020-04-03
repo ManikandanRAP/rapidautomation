@@ -125,6 +125,9 @@ export const GlobalStyle = createGlobalStyle`
   .text_center {
     text-align: center;
   }
+  .text_white {
+    color: #fff;
+  }
   .text_justify {
     text-align: justify;
   }
@@ -263,7 +266,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: transparent;
     border-radius: 4px;
     cursor: pointer;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     height: 42px;
     min-width: 115px;

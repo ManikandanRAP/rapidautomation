@@ -12,20 +12,16 @@ import Container from 'common/src/components/UI/Container';
 import { Link } from 'gatsby';
 
 import IconFloatingsection from '../IconFloating';
+import BgImageDark from '../BgImagedark';
 
 import sample from 'common/src/assets/image/hosting/author-3.jpg';
-
-import darkRightImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-right.svg';
-import darkLeftImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-left.svg';
-import darkRightMobImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-right-mobile.svg';
-import darkLeftMobImg from 'common/src/assets/image/hosting/Background/Benefits/dark-bg-left-mobile.svg';
 
 import CurveDeskImg from 'common/src/assets/image/hosting/Background/Overview/CurveDeskImage.svg';
 import CurveMobImg from 'common/src/assets/image/hosting/Background/Overview/CurveMobImage.svg';
 import DiamondDeskImg from 'common/src/assets/image/hosting/Background/Overview/DiamondDeskImage.svg';
 import DiamondMobImg from 'common/src/assets/image/hosting/Background/Overview/DiamondMobImage.svg';
 
-import FormRecognitionImg1 from 'common/src/assets/image/hosting/Pages/Form Recognition/How It Works.png';
+import FormRecognitionImg1 from 'common/src/assets/image/hosting/Pages/Form Recognition/How It Works.svg';
 
 import './infoapplication.css';
 
@@ -96,34 +92,20 @@ const InfoApplicationSection = ({
                 content="How it Works"
               />
               <Box className="empty_space10" />
-              <Box>
+              <Box className="InfoBanner_Image_container">
                 <Image
                   className="lazyload"
                   src={FormRecognitionImg1}
                   alt="how it works"
                 />
               </Box>
-              <Box className="empty_space20" />
+              <Box className="empty_space30" />
             </Fade>
           </Box>
         </Container>
 
         <Box className="section_background_blue">
-          <aside className="dark-bg">
-            <img
-              className="dark-bg-image dark-bg-image-right data"
-              src={darkRightImg}
-            />
-            <img className="dark-bg-image" src={darkLeftImg} />
-            <img
-              className="dark-bg-image dark-bg-image-right bg-image--mobile data"
-              src={darkRightMobImg}
-            />
-            <img
-              className="dark-bg-image bg-image--mobile data"
-              src={darkLeftMobImg}
-            />
-          </aside>
+          <BgImageDark />
           <Container>
             <Box>
               <Fade bottom cascade>

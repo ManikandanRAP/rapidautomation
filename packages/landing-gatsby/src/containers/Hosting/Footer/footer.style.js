@@ -82,6 +82,9 @@ const ListItem = styled.li`
       color: #343d48;
     }
   }
+  a.customItem {
+    line-height: 1;
+  }
 `;
 
 export { List, ListItem };

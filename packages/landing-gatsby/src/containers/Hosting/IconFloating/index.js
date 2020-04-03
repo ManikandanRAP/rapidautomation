@@ -25,11 +25,14 @@ import './iconfloating.css';
 const IconFloatingsection = ({
   sectionWrapper,
   row,
-  col2,
-  col3,
-  col7,
+  col,
+  col20,
+  col30,
+  col70,
   iconHead,
+  iconsubHead,
   iconDescription,
+  textArea,
 }) => {
   return (
     <>
@@ -39,16 +42,16 @@ const IconFloatingsection = ({
       >
         <Fade bottom cascade delay={120}>
           <Box {...row} className="margin_auto flexjustifyaround">
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={AIPoweredImg}
                     alt="AI-Powered Automation"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>AI-Powered Automation</li>
                     <li {...iconDescription}>
@@ -60,16 +63,16 @@ const IconFloatingsection = ({
               </Box>
             </Box>
 
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={GreaterProductivityImg}
                     alt="Greater Productivity"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>Greater Productivity</li>
                     <li {...iconDescription}>
@@ -80,16 +83,16 @@ const IconFloatingsection = ({
                 </Box>
               </Box>
             </Box>
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={Save50Img}
                     alt="Save About 50% of Your Cost"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>Save About 50% of Your Cost</li>
                     <li {...iconDescription}>
@@ -99,16 +102,16 @@ const IconFloatingsection = ({
                 </Box>
               </Box>
             </Box>
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={IncredibleScalableImg}
                     alt="Incredibly Scalable Solution"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>Incredibly Scalable Solution</li>
                     <li {...iconDescription}>
@@ -118,16 +121,16 @@ const IconFloatingsection = ({
                 </Box>
               </Box>
             </Box>
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={ZeroInterventionImg}
                     alt="Zero Manual Intervention"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>Zero Manual Intervention</li>
                     <li {...iconDescription}>
@@ -138,16 +141,16 @@ const IconFloatingsection = ({
                 </Box>
               </Box>
             </Box>
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={ProcessMultipleImg}
                     alt="Process Multiple Formats"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>Process Multiple Formats</li>
                     <li {...iconDescription}>
@@ -158,16 +161,16 @@ const IconFloatingsection = ({
                 </Box>
               </Box>
             </Box>
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={HandwritingImg}
                     alt="Handwriting Recognition"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>Handwriting Recognition</li>
                     <li {...iconDescription}>
@@ -177,16 +180,16 @@ const IconFloatingsection = ({
                 </Box>
               </Box>
             </Box>
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={AccelerateProcessImg}
                     alt="Accelerates Process Cycle"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>Accelerates Process Cycle</li>
                     <li {...iconDescription}>
@@ -197,16 +200,16 @@ const IconFloatingsection = ({
                 </Box>
               </Box>
             </Box>
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={ErrorFreeImg}
                     alt="Error-free Recognition"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>Error-free Recognition</li>
                     <li {...iconDescription}>
@@ -217,22 +220,264 @@ const IconFloatingsection = ({
                 </Box>
               </Box>
             </Box>
-            <Box {...col2} className="icontext_card">
+            <Box {...col} className="icontext_card">
               <Box {...row} className="flexaligncenter">
-                <Box {...col3}>
+                <Box {...col30}>
                   <Image
                     src={RequireOneTimeImg}
                     alt="Requires Just One-time Training"
                     className="icon_image"
                   />
                 </Box>
-                <Box {...col7}>
+                <Box {...col70}>
                   <ul>
                     <li {...iconHead}>Requires Just One-time Training</li>
                     <li {...iconDescription}>
                       Train multitude of formats and relevant parameters just
                       once.
                     </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+        </Fade>
+      </Box>
+      {/* end of  */}
+      <Box
+        {...sectionWrapper}
+        className="Icon_Floating_Container Home MaxProEff"
+      >
+        <Fade bottom cascade delay={120}>
+          <Box {...row} className="margin_auto flexjustifyaround">
+            <Box {...col30} className="icontext_card icontext_card_whitebg">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col30}>
+                  <Image
+                    src={AccelerateProcessImg}
+                    alt="Accelerate Process"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col70}>
+                  <ul>
+                    <li {...iconHead}>Accelerate Processes</li>
+                    <li {...iconsubHead}>From days to minutes</li>
+                    <li {...iconDescription}>
+                      Leverage automation for faster processes with higher
+                      operational efficiency and accuracy.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col30} className="icontext_card icontext_card_whitebg">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col30}>
+                  <Image
+                    src={IncredibleScalableImg}
+                    alt="Unlimit Capacity"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col70}>
+                  <ul>
+                    <li {...iconHead}>Scale-up with ease</li>
+                    <li {...iconsubHead}>Unlimit Capacity</li>
+                    <li {...iconDescription}>
+                      Augment capacity with automation and scale-up volumes with
+                      greater accuracy and efficiency.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col30} className="icontext_card icontext_card_whitebg">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col30}>
+                  <Image
+                    src={Save50Img}
+                    alt="Reduce operation costs"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col70}>
+                  <ul>
+                    <li {...iconHead}>Reduce Operating costs</li>
+                    <li {...iconsubHead}>30% – 70% Reduction</li>
+                    <li {...iconDescription}>
+                      Cut down Opex with automation powered by AI that provides
+                      accurate results faster at lesser cost.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+          <Box className="empty_space30" />
+          <Box {...row} className="flexjustifycenter">
+            <Box {...col30} className="icontext_card icontext_card_whitebg mr3">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col30}>
+                  <Image
+                    src={ErrorFreeImg}
+                    alt="Accuary"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col70}>
+                  <ul>
+                    <li {...iconHead}>Enhance Accuracy</li>
+                    <li {...iconsubHead}>Reduction in errors</li>
+                    <li {...iconDescription}>
+                      Guaranteed accurate outputs and results through
+                      intelligent automation that minimizes errors.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+            <Box {...col30} className="icontext_card icontext_card_whitebg">
+              <Box {...row} className="flexaligncenter">
+                <Box {...col30}>
+                  <Image
+                    src={ZeroInterventionImg}
+                    alt="Free Up Critical Resources"
+                    className="icon_image"
+                  />
+                </Box>
+                <Box {...col70}>
+                  <ul>
+                    <li {...iconHead}>Free Up Critical Resources</li>
+                    <li {...iconsubHead}>More man hours for critical tasks</li>
+                    <li {...iconDescription}>
+                      Free up critical resources for higher value-add tasks
+                      rather than repetitive low-value ones.
+                    </li>
+                  </ul>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+        </Fade>
+      </Box>
+      {/* end of home maximum process efficiency */}
+      <Box
+        {...sectionWrapper}
+        className="Icon_Floating_Container Home Applications"
+      >
+        <Fade bottom cascade delay={120}>
+          <Box {...textArea}>
+            <Box {...row} className="margin_auto flexjustifyaround">
+              <Box {...col20} className="icontext_card_nobg">
+                <Box>
+                  <ul>
+                    <li>
+                      <Image
+                        src={AccelerateProcessImg}
+                        alt="Form Recognition"
+                        className="icon_image"
+                      />
+                    </li>
+                    <li {...iconHead}>Form Recognition</li>
+                  </ul>
+                </Box>
+              </Box>
+              <Box {...col20} className="icontext_card_nobg">
+                <Box>
+                  <ul>
+                    <li>
+                      <Image
+                        src={AccelerateProcessImg}
+                        alt="Intelligent Email Response"
+                        className="icon_image"
+                      />
+                    </li>
+                    <li {...iconHead}>Intelligent Email Response</li>
+                  </ul>
+                </Box>
+              </Box>
+              <Box {...col20} className="icontext_card_nobg">
+                <Box>
+                  <ul>
+                    <li>
+                      <Image
+                        src={AccelerateProcessImg}
+                        alt="Check Recognition"
+                        className="icon_image"
+                      />
+                    </li>
+                    <li {...iconHead}>Check Recognition</li>
+                  </ul>
+                </Box>
+              </Box>
+              <Box {...col20} className="icontext_card_nobg">
+                <Box>
+                  <ul>
+                    <li>
+                      <Image
+                        src={AccelerateProcessImg}
+                        alt="Quote Processing"
+                        className="icon_image"
+                      />
+                    </li>
+                    <li {...iconHead}>Quote Processing</li>
+                  </ul>
+                </Box>
+              </Box>
+              <Box {...col20} className="icontext_card_nobg">
+                <Box>
+                  <ul>
+                    <li>
+                      <Image
+                        src={AccelerateProcessImg}
+                        alt="Case Deflection"
+                        className="icon_image"
+                      />
+                    </li>
+                    <li {...iconHead}>Case Deflection</li>
+                  </ul>
+                </Box>
+              </Box>
+              <Box {...col20} className="icontext_card_nobg">
+                <Box>
+                  <ul>
+                    <li>
+                      <Image
+                        src={AccelerateProcessImg}
+                        alt="Invoice Processing"
+                        className="icon_image"
+                      />
+                    </li>
+                    <li {...iconHead}>Invoice Processing</li>
+                  </ul>
+                </Box>
+              </Box>
+              <Box {...col20} className="icontext_card_nobg">
+                <Box>
+                  <ul>
+                    <li>
+                      <Image
+                        src={AccelerateProcessImg}
+                        alt="Lease Abstraction"
+                        className="icon_image"
+                      />
+                    </li>
+                    <li {...iconHead}>Lease Abstraction</li>
+                  </ul>
+                </Box>
+              </Box>
+              <Box {...col20} className="icontext_card_nobg">
+                <Box>
+                  <ul>
+                    <li>
+                      <Image
+                        src={AccelerateProcessImg}
+                        alt="ID Verification"
+                        className="icon_image"
+                      />
+                    </li>
+                    <li {...iconHead}>ID Verification</li>
                   </ul>
                 </Box>
               </Box>
@@ -248,9 +493,11 @@ IconFloatingsection.propTypes = {
   sectionWrapper: PropTypes.object,
   row: PropTypes.object,
   col1: PropTypes.object,
-  col2: PropTypes.object,
+  col: PropTypes.object,
   iconHead: PropTypes.object,
+  iconsubHead: PropTypes.object,
   iconDescription: PropTypes.object,
+  textArea: PropTypes.object,
 };
 
 IconFloatingsection.defaultProps = {
@@ -269,24 +516,36 @@ IconFloatingsection.defaultProps = {
     ml: '-15px',
     mr: '-15px',
   },
-  col7: {
-    className: 'col7',
-    width: [1, 1, 0.7, 0.7],
-  },
-  col3: {
-    className: 'col3',
-    width: [1, 1, 0.3, 0.3],
-  },
-  col2: {
-    className: 'col2',
+  col: {
+    className: 'col',
     width: [1, 0.45, 0.45, 0.45],
     pr: '15px',
     pl: '15px',
     mb: '20px',
   },
+  col20: {
+    className: 'col20',
+    width: [0.4, 0.15, 0.15, 0.2],
+  },
+  col30: {
+    className: 'col30',
+    width: [1, 1, 0.3, 0.3],
+  },
+  col70: {
+    className: 'col70',
+    width: [1, 1, 0.7, 0.7],
+  },
   iconHead: {
-    className: 'iconHead',
     fontSize: ['18px', '18px', '20px', '20px'],
+    className: 'iconHead',
+  },
+  iconsubHead: {
+    fontSize: ['18px', '18px', '20px', '20px'],
+    className: 'iconsubHead',
+  },
+  textArea: {
+    width: ['100%', '85%', '85%', '85%', '80%'],
+    margin: '0 auto',
   },
   iconDescription: {
     className: 'iconDescription',

@@ -40,7 +40,7 @@ const Maindeskmenu1 = button => (
               <Link>How It Works</Link>
             </li>
             <li style={{ textAlign: 'center' }}>
-              <Link to="/" className="btn btn_primary">
+              <Link to="/" className="customItem btn btn_primary">
                 <span className="btn-text">Getting Started</span>
               </Link>
             </li>
@@ -245,7 +245,7 @@ const Maindeskmenu1 = button => (
         </nav>
       </li>
       <li>
-        <Link>About</Link>
+        <Link className="customItem">About</Link>
       </li>
       <li className="mainmenuhead">
         <span>
@@ -261,6 +261,11 @@ const Maindeskmenu1 = button => (
             </li>
           </ul>
         </nav>
+      </li>
+      <li>
+        <Link className="btn btn_secondary">
+          <span className="btn-text">Book a Demo</span>
+        </Link>
       </li>
     </ul>
   </nav>
