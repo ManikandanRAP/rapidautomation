@@ -11,6 +11,7 @@ import Navbar from '../containers/Hosting/Navbar';
 import FeatureSection from '../containers/Hosting/Features';
 import InfoSection from '../containers/Hosting/Info';
 import InfoHomeSection from '../containers/Hosting/InfoOther';
+import Scrollfixed from '../containers/Hosting/ScrollFixed';
 import DomainSection from '../containers/Hosting/Domain';
 import PaymentSection from '../containers/Hosting/Payment';
 import GuaranteeSection from '../containers/Hosting/Guarantee';
@@ -41,6 +42,7 @@ export default () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
+          <Scrollfixed />
           <InfoHomeSection />
           <Footer />
         </ContentWrapper>
