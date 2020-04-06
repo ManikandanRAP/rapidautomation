@@ -5,6 +5,46 @@ const FooterWrapper = styled.footer`
   position: relative;
   background-color: #f9fbfd;
   overflow: hidden;
+  #Cookie_msg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    z-index: 9999;
+    .cookie_btn {
+      margin-left: 10px;
+      padding: 0px 10px;
+      display: inline-block;
+      background-color: red;
+      cursor: pointer;
+    }
+  }
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #f2863a;
+    display: none;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 1;
+    padding-bottom: 4px;
+    cursor: pointer;
+    &.scrollTopBtnshown {
+      display: flex;
+    }
+  }
   @media (min-width: 576px) {
     // padding-top: 130px;
     padding-top: 0;

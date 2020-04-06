@@ -121,6 +121,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   // own css
+  .cookie_msg_show #Cookie_msg {
+    display: block;
+  }
   .position_relative {
     position: relative;
   }
@@ -296,6 +299,23 @@ export const GlobalStyle = createGlobalStyle`
     background: #8bf6f2;
     .btn-text {
       color: #3f20ba;
+    }
+  }
+  // dark
+  .btn.btn_secondary.dark {
+    background-color: #3f20ba;
+    border: 1px solid #3f20ba;
+    box-shadow: 0 0 0 1px rgba(18,21,26,0.2), 0 1px 4px 0 rgba(18,21,26,0.08), 0 1px 0 0 rgba(18,21,26,0.05);
+    .btn-text {
+      color: #fff;
+    }
+  }
+  .btn.btn_secondary.dark:hover {
+    background-color: #311c87;
+    border-color: #311c87;
+    box-shadow: 0 0 0 1px rgba(18,21,26,0.2), 0 5px 10px 0 rgba(18,21,26,0.12), 0 1px 0 0 rgba(18,21,26,0.05);
+    .btn-text {
+      color: #fff;
     }
   }
   // btn primary 

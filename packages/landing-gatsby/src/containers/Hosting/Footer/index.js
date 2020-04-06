@@ -8,6 +8,8 @@ import Logo from 'common/src/components/UIElements/Logo';
 import Container from 'common/src/components/UI/Container';
 import FooterWrapper, { List, ListItem } from './footer.style';
 
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 import { Link } from 'gatsby';
 
 import LogoImage from 'common/src/assets/image/hosting/logo.svg';
@@ -35,6 +37,11 @@ const Footer = ({
       }
     }
   `);
+
+  function cokkieBtn() {
+    document.cookie = 'username=RapUser; path=/;';
+    document.getElementById('___gatsby').classList.remove('cookie_msg_show');
+  }
 
   return (
     <FooterWrapper>
@@ -113,6 +120,19 @@ const Footer = ({
           </p>
         </Box>
       </Container>
+      <Box id="scrollTopBtn" onClick={() => scrollTo('#___gatsby')}>
+        <i className="fa fa-chevron-up" />
+      </Box>
+      <Box id="Cookie_msg">
+        <div>
+          We use cookies to ensure that we give you the best experience on our
+          website. If you continue to use this site we will assume that you are
+          happy with it.
+          <span className="cookie_btn" onClick={() => cokkieBtn()}>
+            OK
+          </span>
+        </div>
+      </Box>
     </FooterWrapper>
   );
 };

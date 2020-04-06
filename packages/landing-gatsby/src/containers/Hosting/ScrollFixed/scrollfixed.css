@@ -1,18 +1,53 @@
+/* set overflow to page important */
 .HomePage {
   overflow: inherit !important;
   overflow: visible !important;
   overflow: unset !important;
 }
 #scroll_fixed .scrollmain .scrollmain_left {
-  width: 30%;
+  width: 35%;
   position: sticky;
-  top: 150px;
+  top: 100px;
   float: left;
-  margin-right: 4%;
   /* top: 50%;
     transform: translateY(-50%); */
 }
+
 #scroll_fixed .scrollmain .scrollmain_right {
   width: 65%;
   display: inline-block;
+}
+
+#scroll_fixed .scrollmain .scrollmain_left .btn {
+  margin: inherit;
+  margin: initial;
+  margin: unset;
+}
+#scroll_fixed .scrollmain .scrollmain_left li {
+  cursor: pointer;
+}
+
+#scroll_fixed .scrollmain .scrollmain_right_container {
+  width: 60%;
+  /* margin: 0 auto 100px; */
+  margin: 0 auto 200px;
+}
+#scroll_fixed .scrollmain .scrollmain_right_content {
+  margin: 0 auto 100px;
+  /* margin: 0 auto 200px; */
+}
+/* #scroll_fixed .scrollmain .scrollmain_right_content:last-child {
+  margin-bottom: 0;
+} */
+#scroll_fixed .scrollmain_right_content div.topic {
+  position: relative;
+  top: -140px;
+  display: block;
+  visibility: hidden;
+}
+
+#scroll_fixed .scrollmain .scrollmain_right .scrollmain_right_container img {
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
 }
