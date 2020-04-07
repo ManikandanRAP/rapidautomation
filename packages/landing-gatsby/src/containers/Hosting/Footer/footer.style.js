@@ -98,12 +98,24 @@ const FooterWrapper = styled.footer`
       font-size: 16px;
     }
   }
-
+  .footer_logo {
+    width: 100%;
+    max-width: 90px;
+  }
   .socialmedia_icons a {
-    margin-right: 8px;
+    margin: 0 5px;
+  }
+  .socialmedia_icons a:first-child {
+    margin-left: 0;
   }
   .socialmedia_icons i {
-    font-size: 25px;
+    font-size: 24px;
+    color: rgba(52, 61, 72, 0.3);
+    line-height: 1;
+    vertical-align: middle;
+  }
+  .socialmedia_icons i:hover {
+    color: #150b47;
   }
 `;
 

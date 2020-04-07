@@ -555,6 +555,11 @@ export const ContentWrapper = styled.div`
     .hosting_navbar {
       padding: 10px 0;
     }
+    .sticky-nav-active {
+      .hosting_navbar {
+        padding: 10px 0;
+      }
+    }
   }
 `;
 

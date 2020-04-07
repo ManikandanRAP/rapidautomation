@@ -52,22 +52,29 @@ const Footer = ({
               href="/"
               logoSrc={LogoImage}
               title="Rapid Acceleration Partners"
+              className="footer_logo"
               logoStyle={logoStyle}
             />
             <Text
               content="RAP AI is a Next-Gen Content Intelligence Platform that extracts structured data from a range of unstructured content and automates workflows."
               {...textStyle}
             />
-            <Box className="socialmedia_icons flexbox flexaligncenter flexrow">
-              <Link to="/">
-                <i className="fa fa-twitter" />
-              </Link>
-              <Link to="/">
-                <i className="fa fa-facebook-official" />
-              </Link>
-              <Link to="/">
+            <Box className="socialmedia_icons">
+              <a href="#">
+                <i className="fa fa-twitter-square" />
+              </a>
+              <a href="#">
+                <i className="fa fa-facebook-square" />
+              </a>
+              <a href="#">
                 <i className="fa fa-linkedin-square" />
-              </Link>
+              </a>
+              <a href="#">
+                <i className="fa fa-pinterest-square" />
+              </a>
+              <a href="#">
+                <i className="fa fa-instagram" />
+              </a>
             </Box>
           </Box>
           {/* End of footer logo column */}
@@ -168,9 +175,13 @@ Footer.defaultProps = {
     width: [1, '30%', '30%', '35%'],
     flexBox: true,
     flexWrap: 'wrap',
+    pl: ['15px', 0],
+    pr: ['15px', '15px', 0],
   },
   colThree: {
     width: [1, '30%', '30%', '35%'],
+    pl: ['15px', 0],
+    pr: ['15px', '15px', 0],
   },
   col: {
     width: ['100%', '50%', '50%', '25%'],
