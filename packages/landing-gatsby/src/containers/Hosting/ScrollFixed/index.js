@@ -36,7 +36,7 @@ const Scrollfixed = ({
                 {...description}
                 content="The RAP AI platform is a cutting-edge, AI-powered content intelligence platform that automates extraction of structured data from unstructured content – ranging from emails, images, support tickets, documents, contracts, checks, pretty much anything."
               />
-              <List>
+              <List className="scrollmain_left_items">
                 <ListItem
                   {...listitems}
                   onClick={() => scrollTo('#__ct1')}
