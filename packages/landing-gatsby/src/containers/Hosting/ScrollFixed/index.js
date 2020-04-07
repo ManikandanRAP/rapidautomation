@@ -14,11 +14,11 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import { Link } from 'gatsby';
 
 import sample from 'common/src/assets/image/hosting/badge.png';
-import AccelerateProcess from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Accelerate-Processes.jpg';
-import EnhanceAccuary from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Enhance-Accuracy.jpg';
-import FreeupResource from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Free-Up-Critical-Resources.jpg';
-import ReduceOperatingCost from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Reduce-Operating-costs.jpg';
-import ScaleupEase from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Scale-up-with-ease.jpg';
+import AccelerateProcess from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Accelerate Processes.svg';
+import EnhanceAccuary from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Enhance Accuracy,svg';
+import FreeupResource from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Free Up Critical Resources.svg';
+import ReduceOperatingCost from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Reduce Operating costs.svg';
+import ScaleupEase from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Scale-up with ease.svg';
 
 const Scrollfixed = ({
   sectionWrapper,
