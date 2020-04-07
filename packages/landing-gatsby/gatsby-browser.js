@@ -27,33 +27,6 @@ exports.onClientEntry = () => {
         .getElementById('scrollTopBtn')
         .classList.remove('scrollTopBtnshown');
     }
-    // scrollfix
-    var scrollFix = document.querySelector('#scroll_fixed');
-    var scrollFixTop = scrollFix.getBoundingClientRect().top;
-    if (scrollFixTop <= 0) {
-      var elmt = document.querySelectorAll('.scrollmain_right_content');
-      elmt.forEach(function(Item) {
-        var top = Item.getBoundingClientRect().top;
-        var hght = -Math.abs(Item.getBoundingClientRect().height);
-        if (top <= 0 && top <= hght) {
-          // return console.log(Item);
-          console.log('a');
-        } else {
-          // Item.classList.toggle('Test');
-          // return console.log(Item);
-          console.log('b');
-        }
-      });
-    }
-
-    // element in view
-    // var elmt = document.querySelectorAll('.scrollmain_right_content');
-    // elmt.forEach(function(Item) {
-    //   // deleteUser(userItem);
-    //   // var topVal = userItem.getBoundingClientRect().top;
-    //   // if(topVal === 0 )
-    //   console.log(Item.getBoundingClientRect().top - Item.getBoundingClientRect().height)
-    // });
   });
   function cookieshow() {
     const getCookie = document.cookie;
