@@ -64,7 +64,7 @@ const Scrollfixed = ({
             </Box>
             <Box className="scrollmain_right">
               <Box className="scrollmain_right_container">
-                <Box className="scrollmain_right_content">
+                <Box className="scrollmain_right_content _ct1">
                   <Box id="__ct1" className="topic" />
                   <Image src={sample} alt="sample" />
                   <Heading {...title} content="From days to minutes" />
@@ -73,7 +73,7 @@ const Scrollfixed = ({
                     content="Leverage automation for faster processes with higher operational efficiency and accuracy."
                   />
                 </Box>
-                <Box className="scrollmain_right_content">
+                <Box className="scrollmain_right_content _ct2">
                   <Box id="__ct2" className="topic" />
                   <Image src={sample} alt="sample" />
                   <Heading {...title} content="Unlimit Capacity" />
@@ -82,7 +82,7 @@ const Scrollfixed = ({
                     content="Augment capacity with automation and scale-up volumes with greater accuracy and efficiency."
                   />
                 </Box>
-                <Box className="scrollmain_right_content">
+                <Box className="scrollmain_right_content _ct3">
                   <Box id="__ct3" className="topic" />
                   <Image src={sample} alt="sample" />
                   <Heading {...title} content="30% – 70% Reduction" />
@@ -91,7 +91,7 @@ const Scrollfixed = ({
                     content="Cut down Opex with automation powered by AI that provides accurate results faster at lesser cost."
                   />
                 </Box>
-                <Box className="scrollmain_right_content">
+                <Box className="scrollmain_right_content _ct4">
                   <Box id="__ct4" className="topic" />
                   <Image src={sample} alt="sample" />
                   <Heading {...title} content="Reduction in errors" />
@@ -100,7 +100,7 @@ const Scrollfixed = ({
                     content="Guaranteed accurate outputs and results through intelligent automation that minimizes errors."
                   />
                 </Box>
-                <Box className="scrollmain_right_content">
+                <Box className="scrollmain_right_content _ct5">
                   <Box id="__ct5" className="topic" />
                   <Image src={sample} alt="sample" />
                   <Heading
