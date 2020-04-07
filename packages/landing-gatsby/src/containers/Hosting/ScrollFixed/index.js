@@ -14,6 +14,11 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import { Link } from 'gatsby';
 
 import sample from 'common/src/assets/image/hosting/badge.png';
+import AccelerateProcess from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Accelerate-Processes.jpg';
+import EnhanceAccuary from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Enhance-Accuracy.jpg';
+import FreeupResource from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Free-Up-Critical-Resources.jpg';
+import ReduceOperatingCost from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Reduce-Operating-costs.jpg';
+import ScaleupEase from 'common/src/assets/image/hosting/ScrollFixed/MaxProEff/Scale-up-with-ease.jpg';
 
 const Scrollfixed = ({
   sectionWrapper,
@@ -66,7 +71,7 @@ const Scrollfixed = ({
               <Box className="scrollmain_right_container">
                 <Box className="scrollmain_right_content _ct1">
                   <Box id="__ct1" className="topic" />
-                  <Image src={sample} alt="sample" />
+                  <Image src={AccelerateProcess} alt="Accelerate Process" />
                   <Heading {...title} content="From days to minutes" />
                   <Text
                     {...description}
@@ -75,7 +80,7 @@ const Scrollfixed = ({
                 </Box>
                 <Box className="scrollmain_right_content _ct2">
                   <Box id="__ct2" className="topic" />
-                  <Image src={sample} alt="sample" />
+                  <Image src={FreeupResource} alt="Unlimit Capacity" />
                   <Heading {...title} content="Unlimit Capacity" />
                   <Text
                     {...description}
@@ -84,7 +89,7 @@ const Scrollfixed = ({
                 </Box>
                 <Box className="scrollmain_right_content _ct3">
                   <Box id="__ct3" className="topic" />
-                  <Image src={sample} alt="sample" />
+                  <Image src={ReduceOperatingCost} alt="Cost Reduction" />
                   <Heading {...title} content="30% – 70% Reduction" />
                   <Text
                     {...description}
@@ -93,7 +98,7 @@ const Scrollfixed = ({
                 </Box>
                 <Box className="scrollmain_right_content _ct4">
                   <Box id="__ct4" className="topic" />
-                  <Image src={sample} alt="sample" />
+                  <Image src={EnhanceAccuary} alt="Reduction in errors" />
                   <Heading {...title} content="Reduction in errors" />
                   <Text
                     {...description}
@@ -102,7 +107,10 @@ const Scrollfixed = ({
                 </Box>
                 <Box className="scrollmain_right_content _ct5">
                   <Box id="__ct5" className="topic" />
-                  <Image src={sample} alt="sample" />
+                  <Image
+                    src={ScaleupEase}
+                    alt="More man hours for critical tasks"
+                  />
                   <Heading
                     {...title}
                     content="More man hours for critical tasks"
