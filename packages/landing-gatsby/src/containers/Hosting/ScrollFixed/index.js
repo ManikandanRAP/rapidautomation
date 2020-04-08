@@ -30,6 +30,82 @@ const Scrollfixed = ({
   contentArea,
   listitems,
 }) => {
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', function(e) {
+      const test = document.querySelector('.scrollmain_right_content');
+      if (test != null) {
+        const isInViewport = function(data) {
+          let bounding = data.getBoundingClientRect();
+          let boundingTopOffset = bounding.top - 140;
+          let boundingBottom = bounding.bottom;
+          // let boundingBottomOffset = bounding.bottom;
+          return boundingTopOffset <= 0 && boundingBottom >= 0;
+        };
+
+        const content1 = document.querySelector(
+          '.scrollmain_right_content._ct1'
+        );
+        const content2 = document.querySelector(
+          '.scrollmain_right_content._ct2'
+        );
+        const content3 = document.querySelector(
+          '.scrollmain_right_content._ct3'
+        );
+        const content4 = document.querySelector(
+          '.scrollmain_right_content._ct4'
+        );
+        const content5 = document.querySelector(
+          '.scrollmain_right_content._ct5'
+        );
+
+        if (isInViewport(content1)) {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[0]
+            .classList.add('active');
+        } else {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[0]
+            .classList.remove('active');
+        }
+        if (isInViewport(content2)) {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[1]
+            .classList.add('active');
+        } else {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[1]
+            .classList.remove('active');
+        }
+        if (isInViewport(content3)) {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[2]
+            .classList.add('active');
+        } else {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[2]
+            .classList.remove('active');
+        }
+        if (isInViewport(content4)) {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[3]
+            .classList.add('active');
+        } else {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[3]
+            .classList.remove('active');
+        }
+        if (isInViewport(content5)) {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[4]
+            .classList.add('active');
+        } else {
+          document
+            .querySelectorAll('.scrollmain_left_items li')[4]
+            .classList.remove('active');
+        }
+      }
+    });
+  }
   return (
     <>
       <Box {...sectionWrapper} className="Scroll_MaximizeProEff">
@@ -42,11 +118,7 @@ const Scrollfixed = ({
                 content="The RAP AI platform is a cutting-edge, AI-powered content intelligence platform that automates extraction of structured data from unstructured content – ranging from emails, images, support tickets, documents, contracts, checks, pretty much anything."
               />
               <List className="scrollmain_left_items">
-                <ListItem
-                  {...listitems}
-                  onClick={() => scrollTo('#__ct1')}
-                  offset={500}
-                >
+                <ListItem {...listitems} onClick={() => scrollTo('#__ct1')}>
                   Accelerate Processes
                 </ListItem>
                 <ListItem {...listitems} onClick={() => scrollTo('#__ct2')}>
