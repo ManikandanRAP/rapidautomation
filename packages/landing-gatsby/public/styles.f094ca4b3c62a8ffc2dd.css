@@ -3173,6 +3173,9 @@
   #scroll_fixed .scrollmain .scrollmain_left .scrollmain_left_items {
     display: block;
   }
+  #scroll_fixed .scrollmain .scrollmain_left .scrollmain_left_items li.active {
+    font-weight: 700;
+  }
   #scroll_fixed .scrollmain .scrollmain_left .btn {
     margin: unset;
   }
