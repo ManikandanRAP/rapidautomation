@@ -1,14 +1,29 @@
-.typingEffectContainer p {
+.typingEffectContainer h2 {
   color: #fff;
+  font-size: 45px;
   text-align: center;
 }
+.typingEffectContainer .dummy_text {
+  opacity: 0;
+  visibility: hidden;
+}
 
-.typingEffectContainer p span.cursor {
-  display: inline-block;
+.typingEffectContainer .txt-type {
+  position: relative;
+}
+
+.typingEffectContainer .txt-type::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 100%;
+  /* background-color: transparent;
+  animation: blink 0.4s infinite; */
   background-color: #ccc;
-  margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
+  animation: none;
 }
 
 @keyframes blink {
@@ -29,6 +44,18 @@
   }
 }
 
-.container p span.cursor.typing {
-  animation: none;
+@media only screen and (max-width: 991px) {
+  .typingEffectContainer h2 {
+    font-size: 42px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .typingEffectContainer h2 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .typingEffectContainer h2 {
+    font-size: 26px;
+  }
 }
