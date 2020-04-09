@@ -40,13 +40,36 @@
     font-weight: bold;
   }
 
+  #scroll_fixed .scrollmain .scrollmain_left .scrollmain_left_items li {
+    cursor: pointer;
+    position: relative;
+  }
+
+  #scroll_fixed .scrollmain .scrollmain_left .scrollmain_left_items li::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    border-radius: 50px;
+    background-color: #f2863a;
+    transition: width 0.4s ease;
+    transition-delay: 0.4s;
+  }
+
+  #scroll_fixed
+    .scrollmain
+    .scrollmain_left
+    .scrollmain_left_items
+    li.active::before {
+    width: 20px;
+  }
+
   #scroll_fixed .scrollmain .scrollmain_left .btn {
     margin: inherit;
     margin: initial;
     margin: unset;
-  }
-  #scroll_fixed .scrollmain .scrollmain_left li {
-    cursor: pointer;
   }
 
   #scroll_fixed .scrollmain .scrollmain_right_container {
@@ -63,7 +86,7 @@
   } */
   #scroll_fixed .scrollmain_right_content div.topic {
     position: relative;
-    top: -140px;
+    top: -93px;
     display: block;
     visibility: hidden;
   }

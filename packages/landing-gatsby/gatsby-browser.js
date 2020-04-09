@@ -12,7 +12,23 @@ exports.onClientEntry = () => {
   function pageload() {
     document.getElementById('___gatsby').classList.add('page__loaded');
   }
-  // scroll top functionality
+
+  //test
+  window.addEventListener('load', () => {
+    function removeActive() {
+      var test = document.querySelectorAll('.mobile_menu_drop.active');
+      for (let i = 0; i < test.length; i++) {
+        // dropMenus[i].className.replace(/active/g, "").trim();
+        let x = test[i].className;
+        let y = x.replace('active', '');
+        // let y = x.replace(/active/g, "").trim();
+        // dropMenus[i].className.replace(/active/g, "").trim();
+        console.log(y);
+      }
+    }
+  });
+  //test
+
   window.addEventListener('scroll', function(e) {
     // scroll top button
     if (

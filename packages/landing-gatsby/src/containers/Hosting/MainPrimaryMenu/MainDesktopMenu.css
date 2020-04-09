@@ -36,7 +36,7 @@
   margin: 0 auto;
   /* background-color: rgba(255, 255, 255, 0.95); */
   background-color: #fff;
-  border-top: 2px solid red;
+  border-top: 2px solid #f2863a;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
 }
@@ -49,7 +49,10 @@
 #desktopmenu .dropdownMenu3,
 #desktopmenu .dropdownMenu4,
 #desktopmenu .dropdownMenu2 {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-out;
 }
 
 #desktopmenu .dropdownMenu3 {
@@ -105,9 +108,13 @@
 }
 #desktopmenu .mainmenuhead:hover nav {
   display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 #desktopmenu .mainmenuhead2:hover nav {
   display: block;
+  opacity: 1;
+  visibility: visible;
   cursor: pointer;
 }
 #desktopmenu .dropdownMenu1 ul.subwidth30 {

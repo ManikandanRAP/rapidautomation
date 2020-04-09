@@ -32,11 +32,11 @@ const Scrollfixed = ({
 }) => {
   if (typeof window !== 'undefined') {
     window.addEventListener('scroll', function(e) {
-      const test = document.querySelector('.scrollmain_right_content');
-      if (test != null) {
+      const content = document.querySelector('.scrollmain_right_content');
+      if (content != null) {
         const isInViewport = function(data) {
           let bounding = data.getBoundingClientRect();
-          let boundingTopOffset = bounding.top - 140;
+          let boundingTopOffset = bounding.top - 105;
           let boundingBottom = bounding.bottom;
           // let boundingBottomOffset = bounding.bottom;
           return boundingTopOffset <= 0 && boundingBottom >= 0;

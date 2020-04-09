@@ -9,6 +9,8 @@ import ParticlesWebComponent from '../../Hosting/ParticleWeb';
 import BannerWrapper from './banner.style';
 import { Link } from 'gatsby';
 
+import TypingEffectSection from '../../Hosting/TypingEffect';
+
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 // import './bannerother.css';
@@ -34,11 +36,12 @@ const BannerSection = ({
                 className="text_center"
                 content="Practical AI that delivers"
               />
-              <Heading
+              {/* <Heading
                 {...title}
                 className="text_center"
                 content="Productivity"
-              />
+              /> */}
+              <TypingEffectSection />
               <Text
                 {...description}
                 className="text_center"
