@@ -195,7 +195,7 @@ export const GlobalStyle = createGlobalStyle`
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 0;
+    z-index: -1;
     img {
       width: 100%;
       max-width: 100%;

@@ -47,29 +47,77 @@ const InfoApplicationSection = ({
   return (
     <Box {...sectionWrapper}>
       <Box className="multi_sections_container FormRecognition_info_container">
-        <aside class="bg-images section_background_white">
-          <img
-            class="bg-image"
-            src={CurveDeskImg}
-            alt="Background image of a diamond shape"
-          />
-          <img
-            class="bg-image"
-            src={DiamondDeskImg}
-            alt="Background image of a diamond shape"
-          />
-          <img
-            class="bg-image bg-image--mobile"
-            src={CurveMobImg}
-            alt="Background image of a diamond shape"
-          />
-          <img
-            class="bg-image bg-image--mobile"
-            src={DiamondMobImg}
-            alt="Background image of a diamond shape"
-          />
-        </aside>
-        <Container>
+        <Box className="overview_section">
+          <aside class="bg-images section_background_white">
+            <img
+              class="bg-image"
+              src={CurveDeskImg}
+              alt="Background image of a diamond shape"
+            />
+            <img
+              class="bg-image"
+              src={DiamondDeskImg}
+              alt="Background image of a diamond shape"
+            />
+            <img
+              class="bg-image bg-image--mobile"
+              src={CurveMobImg}
+              alt="Background image of a diamond shape"
+            />
+            <img
+              class="bg-image bg-image--mobile"
+              src={DiamondMobImg}
+              alt="Background image of a diamond shape"
+            />
+          </aside>
+          <Container>
+            <Box {...row}>
+              <Box {...col}>
+                <Fade bottom cascade>
+                  <Box className="InfoBanner_Image_container">
+                    <Image
+                      className="lazyload"
+                      src={FormRecognitionImg1}
+                      alt="how it works"
+                    />
+                  </Box>
+                </Fade>
+              </Box>
+              <Box {...col}>
+                <Fade bottom cascade>
+                  <Heading {...title} content="How it Works" />
+                  <Text
+                    {...description}
+                    className="text_justify"
+                    content="Automate form recognition with the capacity to handle multiple templates and formats. Leverage RAP AI’s EyeMagic engine that has OCR capabilities and can recognize text both printed and handwritten."
+                    // content="Automate form recognition with the capacity to handle multiple templates and formats. Leverage RAP AI’s EyeMagic engine that has OCR capabilities and can recognize text both printed and handwritten. Expedite form processing with zero manual intervention thanks the power of EyeMagic. Extract meaningful structured content from myriad types of forms and feed this structured data into other systems that make use of such content. End-to-end automation of scanned forms provides massive cost-savings, accelerates process cycle time, eliminates errors that are common in manual processes and enables scalability to cope with increased volumes of forms. The application can be deployed on-premise or on a private or public cloud as suits your requirements. Train once in a matter of days, and then deploy to transform your form recognition processes for maximum efficiency."
+                  />
+                  <Box className="empty_space20" />
+                </Fade>
+              </Box>
+            </Box>
+          </Container>
+        </Box>
+        <Box className="section_background_blue benefit_section">
+          <BgImageDark />
+          <Container>
+            <Box>
+              <Fade bottom cascade>
+                {/* <Heading
+                  {...title}
+                  className="text_center"
+                  content="Benefits"
+                /> */}
+                <Box className="empty_space20" />
+                <IconFloatingsection />
+                <Box className="empty_space20" />
+              </Fade>
+            </Box>
+          </Container>
+        </Box>
+
+        {/* seperate layers design */}
+        {/* <Container>
           <Box {...contentArea}>
             <Fade bottom cascade>
               <Heading {...title} className="text_center" content="Overview" />
@@ -102,25 +150,8 @@ const InfoApplicationSection = ({
               <Box className="empty_space30" />
             </Fade>
           </Box>
-        </Container>
-
-        <Box className="section_background_blue">
-          <BgImageDark />
-          <Container>
-            <Box>
-              <Fade bottom cascade>
-                {/* <Heading
-                  {...title}
-                  className="text_center"
-                  content="Benefits"
-                /> */}
-                <Box className="empty_space20" />
-                <IconFloatingsection />
-                <Box className="empty_space20" />
-              </Fade>
-            </Box>
-          </Container>
-        </Box>
+        </Container> */}
+        {/* seperate layers design */}
       </Box>
       {/* end of form recognition */}
     </Box>
@@ -178,6 +209,8 @@ InfoApplicationSection.defaultProps = {
   row: {
     flexBox: true,
     flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
     ml: '-15px',
     mr: '-15px',
   },
@@ -187,6 +220,7 @@ InfoApplicationSection.defaultProps = {
   col: {
     pr: '15px',
     pl: '15px',
+    width: ['100%', '100%', '100%', '49%', '49%'],
   },
   textArea: {
     width: ['100%', '100%', '100%', '49%', '49%'],
