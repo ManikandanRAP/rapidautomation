@@ -95,6 +95,20 @@ const BannerSection = ({
           </Box>
         </Container>
       </BannerWrapper>
+
+      <BannerWrapper className="banner_container Contactus">
+        <Container>
+          <Box {...row}>
+            <Box {...textArea}>
+              <Heading {...title} content="Book A Demo" />
+              <Text
+                {...description}
+                content="Our experts are here to answer your questions"
+              />
+            </Box>
+          </Box>
+        </Container>
+      </BannerWrapper>
     </>
   );
 };

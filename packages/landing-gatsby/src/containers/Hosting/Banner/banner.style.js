@@ -40,6 +40,14 @@ const BannerWrapper = styled.section`
     display: flex;
     background-image: url(${HomeBG});
   }
+  .ContactPage &.Contactus {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    min-height: 350px;
+    max-height: 350px;
+    display: flex;
+    background-image: url(${HomeBG});
+  }
   &::before {
     content: '';
     width: 100%;
