@@ -19,19 +19,10 @@
 
 /* background color with image translate => new design */
 
-#info_application .overview_section .InfoBanner_Image_container img {
-  transform-origin: center;
-  transform: translateY(10%);
-  background-color: #fff;
-  box-shadow: 0 40px 90px -30px rgba(39, 79, 117, 0.2);
-}
-#info_application .overview_section {
-  position: relative;
-  margin-bottom: 50px;
-}
 #info_application .overview_section aside {
   display: none;
 }
+
 #info_application .overview_section::before {
   content: '';
   position: absolute;
@@ -42,6 +33,42 @@
   left: 0;
   right: 0;
 }
+
+#info_application .overview_section {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* v1 */
+/* 
+#info_application .overview_section .InfoBanner_Image_container img {
+  transform-origin: center;
+  transform: translateY(10%);
+  background-color: #fff;
+  box-shadow: 0 40px 90px -30px rgba(39, 79, 117, 0.2);
+}
+*/
+
+/* v2 */
+
+#info_application .overview_section .InfoBanner_Image_container {
+  /* background-color: #fff; */
+  margin-bottom: -30px;
+}
+
+#info_application .overview_section .InfoBanner_Image_container img {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(18, 21, 26, 0.04),
+    0 16px 32px 0 rgba(18, 21, 26, 0.12);
+}
+
+@media only screen and (max-width: 991px) {
+  #info_application .overview_section .InfoBanner_Image_container {
+    margin-bottom: 0px;
+  }
+}
+
 /* background color with image translate */
 
 .FormRecognitionPage

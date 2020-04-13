@@ -71,6 +71,7 @@ const InfoApplicationSection = ({
             />
           </aside>
           <Container>
+            <Box className="empty_space40" />
             <Box {...row}>
               <Box {...col}>
                 <Fade bottom cascade>
@@ -85,7 +86,7 @@ const InfoApplicationSection = ({
               </Box>
               <Box {...col}>
                 <Fade bottom cascade>
-                  <Heading {...title} content="How it Works" />
+                  <Heading {...title} content="Overview" />
                   <Text
                     {...description}
                     className="text_justify"
