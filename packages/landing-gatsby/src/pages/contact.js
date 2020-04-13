@@ -8,19 +8,8 @@ import {
 } from '../containers/Hosting/hosting.style';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/Hosting/Navbar';
-import FeatureSection from '../containers/Hosting/Features';
-import InfoSection from '../containers/Hosting/Info';
-import InfoHomeSection from '../containers/Hosting/InfoHome';
-import Scrollfixed from '../containers/Hosting/ScrollFixed';
-import DomainSection from '../containers/Hosting/Domain';
-import PaymentSection from '../containers/Hosting/Payment';
-import GuaranteeSection from '../containers/Hosting/Guarantee';
-import FaqSection from '../containers/Hosting/Faq';
-import ServicesSection from '../containers/Hosting/Services';
 import BannerSection from '../containers/Hosting/Banner';
-import PricingSection from '../containers/Hosting/Pricing';
-import TestimonialSection from '../containers/Hosting/Testimonials';
-import ContactSection from '../containers/Hosting/Contact';
+import InfoOtherSection from '../containers/Hosting/InfoOther';
 import Footer from '../containers/Hosting/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -35,15 +24,14 @@ export default () => {
         <ResetCSS />
         <GlobalStyle />
 
-        <ContentWrapper className="HomePage">
+        <ContentWrapper className="ContactPage">
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
               <Navbar />
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          <Scrollfixed />
-          <InfoHomeSection />
+          <InfoOtherSection />
           <Footer />
         </ContentWrapper>
       </ParallaxProvider>

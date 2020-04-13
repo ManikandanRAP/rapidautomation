@@ -1,63 +1,49 @@
 import styled from 'styled-components';
 
 const ContactFromWrapper = styled.div`
-  display: flex;
-  align-items: stretch;
-  width: 490px;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  @media (max-width: 575px) {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 25px;
-    button {
-      width: 100%;
-    }
+  background-color: #f3f6f9;
+  padding: 10%;
+  input,
+  textarea,
+  select {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 15px;
+  }
+  input,
+  select {
+    margin: 8px 0;
+    width: 49%;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 4px;
+    outline: none;
+  }
+  select {
+    padding: 14px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .input_full_width {
+    width: 100%;
+  }
+  .messagebox {
+    margin: 8px 0;
+    margin-bottom: 20px;
+    min-height: 100px;
+    font-family: inherit;
+    border-radius: 4px;
+    border: 1px solid rgb(235, 235, 235);
   }
 
-  .email_input {
-    flex-grow: 1;
-    margin-right: 20px;
-    @media (max-width: 575px) {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-    &.is-material {
-      &.is-focus {
-        label {
-          color: #aeb1b6;
-          font-size: 12px;
-        }
-      }
-    }
-
-    input {
-      height: 100%;
-      background: #fff;
-      font-size: 16px;
-      font-weight: 400;
-      color: #343d48;
-      padding: 5px 15px;
-      border-color: #dadada;
-      @media (max-width: 575px) {
-        height: 48px;
-      }
-    }
-
-    label {
-      font-size: 14px;
-      color: #343d48;
-      font-weight: 500;
-      padding-left: 10px;
-      top: 5px;
-    }
+  .form_fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-
-  .field-wrapper {
-    height: 100%;
+  @media only screen and (max-width: 575px) {
+    input,
+    select {
+      width: 100%;
+    }
   }
 `;
 

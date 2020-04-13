@@ -9,17 +9,15 @@ import Card from 'common/src/components/Card';
 import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 
-import { Link } from 'gatsby';
+import ContactSection from '../Contact';
 
-// import IconParticleSection from '../IconTextParticle';
-import IconFloatingSection from '../IconFloating';
-import BgImageDark from '../BgImagedark';
+import { Link } from 'gatsby';
 
 import sample from 'common/src/assets/image/hosting/author-3.jpg';
 
 import './infoother.css';
 
-const InfoHomeSection = ({
+const InfoOtherSection = ({
   sectionWrapper,
   row,
   col,
@@ -42,152 +40,29 @@ const InfoHomeSection = ({
 }) => {
   return (
     <Box {...sectionWrapper}>
-      <Box className="multi_sections_container Home_info_container">
-        <Container className="maxproeff_container">
-          <Fade bottom cascade>
-            <Box className="empty_space20" />
-            <Box {...textArea}>
-              <Heading
-                {...title}
-                content="Maximize Process Efficiency"
-                className="text_center"
-              />
-              <Text
-                {...description}
-                className="text_justify"
-                content="The RAP AI platform is a cutting-edge, AI-powered content intelligence platform that automates extraction of structured data from unstructured content – ranging from emails, images, support tickets, documents, contracts, checks, pretty much anything."
-              />
-            </Box>
-            <IconFloatingSection />
-            <Box className="empty_space40" />
-          </Fade>
-        </Container>
-
-        <Box className="applications_container">
-          <Box className="section_background_blue">
-            <BgImageDark />
-            <Container>
-              <Fade bottom cascade>
-                <Box className="empty_space20" />
-                <Box {...textArea}>
-                  <Heading
-                    {...title}
-                    content="Applications"
-                    className="text_center"
-                  />
-                  <Text
-                    {...description}
-                    className="text_center text_white"
-                    content="Innovation through automation is key to successful business transformation. To this end, we have a multitude of applications that you can choose from, powered by EyeMagic, ResponseGenie or both."
-                  />
-                </Box>
-              </Fade>
-              <IconFloatingSection />
-              <Box className="empty_space40" />
-            </Container>
+      <Box className="multi_sections_container Contact_info_container">
+        <Container>
+          <Box className="empty_space20" />
+          <Box {...textArea}>
+            <Heading
+              {...title}
+              content="Unlock The True Potential Of Your Unstructured Content With RAP AI"
+              className="text_center"
+            />
+            <Text
+              {...description}
+              className="text_justify"
+              content="Achieve peak operational efficiencies with our Next-Gen Content Intelligence Platform. Curious to learn how it works? Fill in your information and our sales executives will be in touch shortly to set up a virtual demonstration. You will get to see a few working models and find out how you can transform your process efficiencies and disrupt your industry with RAP AI."
+            />
           </Box>
-        </Box>
-      </Box>
-
-      {/* <Box className="multi_sections_container Home_info_container">
-        <Container className="platform_container">
-          <Fade bottom cascade>
-            <Box className="empty_space20" />
-            <Box {...row} className="flexaligncenter">
-              <Box {...col1}>
-                <Heading {...title} content="The Platform" />
-              </Box>
-              <Box {...col2}>
-                <Text
-                  {...description}
-                  className="text_justify"
-                  content="The RAP AI platform with its core engines – EyeMagic and ResponseGenie automates a range of tasks and processes across various industries with extremely high efficiency and accuracy. IPA (Intelligent Process Automation) combines the power of business process automation, RPA and AI to extract structured content from a range of sources."
-                />
-              </Box>
-            </Box>
-            <Box className="empty_space20" />
-            <IconTextHoverSection />
-            <Box className="empty_space20" />
-          </Fade>
         </Container>
-
-        <Box className="section_background_color">
-          <Container className="maxproeff_container">
-            <Fade bottom cascade>
-              <Box className="empty_space20" />
-              <Box {...row} className="flexaligncenter">
-                <Box {...col1}>
-                  <Heading {...title} content="Maximize Process Efficiency" />
-                </Box>
-                <Box {...col2}>
-                  <Text
-                    {...description}
-                    className="text_justify"
-                    content="The RAP AI platform is a cutting-edge, AI-powered content intelligence platform that automates extraction of structured data from unstructured content – ranging from emails, images, support tickets, documents, contracts, checks, pretty much anything."
-                  />
-                </Box>
-              </Box>
-              <Box className="empty_space20" />
-              <IconTextHoverSection />
-              <Box className="empty_space20" />
-            </Fade>
-          </Container>
-        </Box>
-
-        <Container className="applications_container">
-          <Fade bottom cascade>
-            <Box className="empty_space20" />
-            <Box {...row} className="flexaligncenter">
-              <Box {...col1}>
-                <Heading {...title} content="Applications" />
-              </Box>
-              <Box {...col2}>
-                <Text
-                  {...description}
-                  className="text_justify"
-                  content="Innovation through automation is key to successful business transformation. To this end, we have a multitude of applications that you can choose from, powered by EyeMagic, ResponseGenie or both."
-                />
-              </Box>
-            </Box>
-            <Box className="empty_space20" />
-            <IconTextHoverSection />
-            <Box className="empty_space20" />
-          </Fade>
-        </Container>
-
-        <Box className="section_background_color">
-          <Container className="revolutionizingoper_container">
-            <Fade bottom cascade>
-              <Box className="empty_space20" />
-              <Box {...row} className="flexaligncenter">
-                <Box {...col1}>
-                  <Heading
-                    {...title}
-                    content="Revolutionizing Operational Efficiency Across Industries"
-                  />
-                </Box>
-                <Box {...col2}>
-                  <Text
-                    {...description}
-                    className="text_justify"
-                    content="AI-powered tools and automation can transform operations, processes and workflows across a wide range of industries. Our AI platforms can integrate with your existing systems and augment capabilities, pulling data from existing multiple sources to automate and accelerate processes. Transform the way you do business, unleash your full potential, and take advantage of new opportunities."
-                  />
-                </Box>
-              </Box>
-              <Box className="empty_space20" />
-              <IconTextHoverSection />
-              <Box className="empty_space20" />
-            </Fade>
-          </Container>
-        </Box>
+        <ContactSection />
       </Box>
-      */}
-      {/* end of Home page */}
     </Box>
   );
 };
 
-InfoHomeSection.propTypes = {
+InfoOtherSection.propTypes = {
   sectionWrapper: PropTypes.object,
   row: PropTypes.object,
   col: PropTypes.object,
@@ -209,11 +84,11 @@ InfoHomeSection.propTypes = {
   box_size: PropTypes.object,
 };
 
-InfoHomeSection.defaultProps = {
+InfoOtherSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
     // pt: ['25px', '25px', '25px', '30px', '30px'],
-    // pb: ['60px', '80px', '40px', '80px', '80px'],
+    // pb: ['25px', '25px', '25px', '30px', '30px'],
     id: 'info_other',
   },
   secTitleWrapper: {
@@ -284,8 +159,8 @@ InfoHomeSection.defaultProps = {
     fontWeight: '300',
     color: '#0f2137',
     letterSpacing: '-0.025em',
-    mt: ['10px', '15px', '15px', '20px', '20px'],
-    mb: ['10px', '15px', '15px', '20px', '20px'],
+    pt: ['10px', '15px', '15px', '20px', '20px'],
+    pb: ['10px', '15px', '15px', '20px', '20px'],
   },
   description: {
     fontSize: ['16px', '18px', '18px', '18px', '18px'],
@@ -314,4 +189,4 @@ InfoHomeSection.defaultProps = {
   },
 };
 
-export default InfoHomeSection;
+export default InfoOtherSection;

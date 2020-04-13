@@ -1,8 +1,8 @@
-#info_other .InfoBanner_Image_container {
+#info_home .InfoBanner_Image_container {
   /* background-color: #ececec; */
   background-color: transparent;
 }
-#info_other .InfoBanner_Image_container img {
+#info_home .InfoBanner_Image_container img {
   /* background-color: #ececec; */
   padding: 15px;
   width: 100%;
@@ -11,14 +11,11 @@
   max-width: 500px;
   margin: 0 auto;
 }
-#info_other .multi_sections_container {
+#info_home .multi_sections_container {
   display: none;
 }
 
-#info_other .Contact_info_container {
-  background-color: #f9fbfd;
-}
-.ContactPage #info_other .multi_sections_container.Contact_info_container {
+.HomePage #info_home .multi_sections_container.Home_info_container {
   display: block;
 }
 
@@ -31,13 +28,13 @@
 }
 
 @media only screen and (min-width: 992px) {
-  #info_other .info_order_change {
+  #info_home .info_order_change {
     order: 2;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  #info_other .InfoBanner_Image_container {
+  #info_home .InfoBanner_Image_container {
     padding: 15px;
   }
 }
