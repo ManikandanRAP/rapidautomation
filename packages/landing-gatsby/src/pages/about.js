@@ -1,17 +1,40 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
-import Layout from '../components/layout';
+import { ThemeProvider } from 'styled-components';
+import Sticky from 'react-stickynode';
+import { hostingTheme } from 'common/src/theme/hosting';
+import {
+  GlobalStyle,
+  ContentWrapper,
+} from '../containers/Hosting/hosting.style';
+import { ResetCSS } from 'common/src/assets/css/style';
+import Navbar from '../containers/Hosting/Navbar';
+import BannerSection from '../containers/Hosting/Banner';
+import InfoOtherSection from '../containers/Hosting/InfoOther';
+import Footer from '../containers/Hosting/Footer';
+import { DrawerProvider } from 'common/src/contexts/DrawerContext';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import SEO from '../components/seo';
 
-const AboutPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <p>Some changes</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-);
+export default () => {
+  return (
+    <ThemeProvider theme={hostingTheme}>
+      <ParallaxProvider>
+        <SEO title="Next-gen Content Intelligence Platform" />
 
-export default AboutPage;
+        <ResetCSS />
+        <GlobalStyle />
+
+        <ContentWrapper className="AboutPage">
+          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+            <DrawerProvider>
+              <Navbar />
+            </DrawerProvider>
+          </Sticky>
+          <BannerSection />
+          <InfoOtherSection />
+          <Footer />
+        </ContentWrapper>
+      </ParallaxProvider>
+    </ThemeProvider>
+  );
+};

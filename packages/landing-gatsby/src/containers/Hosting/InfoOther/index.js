@@ -16,6 +16,7 @@ import { Link } from 'gatsby';
 import sample from 'common/src/assets/image/hosting/author-3.jpg';
 
 import './infoother.css';
+import Teamsection from '../Team';
 
 const InfoOtherSection = ({
   sectionWrapper,
@@ -57,6 +58,23 @@ const InfoOtherSection = ({
           </Box>
         </Container>
         <ContactSection />
+      </Box>
+      <Box className="multi_sections_container About_info_container">
+        <Container>
+          <Box {...textArea}>
+            <Heading
+              {...title}
+              content="Leadership Team"
+              className="text_center"
+            />
+            <Text
+              {...description}
+              className="text_center"
+              content="We love what we do and we do it with passion. Meet our experienced and dynamic team who are behind our continually evolving, AI content intelligence platform and range of AI powered applications."
+            />
+          </Box>
+          <Teamsection />
+        </Container>
       </Box>
     </Box>
   );

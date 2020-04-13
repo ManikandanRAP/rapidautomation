@@ -15,10 +15,12 @@
   display: none;
 }
 
-#info_other .Contact_info_container {
+#info_other .Contact_info_container,
+#info_other .About_info_container {
   background-color: #f9fbfd;
 }
-.ContactPage #info_other .multi_sections_container.Contact_info_container {
+.ContactPage #info_other .multi_sections_container.Contact_info_container,
+.AboutPage #info_other .multi_sections_container.About_info_container {
   display: block;
 }
 

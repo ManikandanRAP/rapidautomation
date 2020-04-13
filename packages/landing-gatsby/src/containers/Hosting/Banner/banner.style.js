@@ -4,12 +4,11 @@ import FormRecognitionBG from 'common/src/assets/image/hosting/Banner/BFSI.webp'
 import ITBG from 'common/src/assets/image/hosting/Banner/BFSI.webp';
 
 const BannerWrapper = styled.section`
-  padding-top: 50px;
-  // padding-bottom: 150px;
-  min-height: 500px;
-  max-height: 500px;
+  padding-top: 93px;
+  padding-bottom: 55px;
   display: flex;
   align-items: center;
+  justify-center: center;
   .particle {
     position: absolute;
     width: 100%;
@@ -26,6 +25,12 @@ const BannerWrapper = styled.section`
     background-repeat: no-repeat;
     display: none;
   }
+  .HomePage &.Home {
+    display: flex;
+    background-image: url(${HomeBG});
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .FormRecognitionPage &.FormRecognition {
     display: flex;
     background-image: url(${FormRecognitionBG});
@@ -34,17 +39,11 @@ const BannerWrapper = styled.section`
     display: flex;
     background-image: url(${ITBG});
   }
-  .HomePage &.Home {
-    padding-top: 270px;
-    padding-bottom: 220px;
+  .AboutPage &.About {
     display: flex;
     background-image: url(${HomeBG});
   }
   .ContactPage &.Contactus {
-    padding-top: 20px;
-    padding-bottom: 0px;
-    min-height: 350px;
-    max-height: 350px;
     display: flex;
     background-image: url(${HomeBG});
   }
@@ -52,9 +51,6 @@ const BannerWrapper = styled.section`
     content: '';
     width: 100%;
     height: 100%;
-    // background-color: rgba(5, 47, 74, 0.67);
-    // background-image: linear-gradient(128deg, #6428e2, #510bdf);
-    // background-image: linear-gradient(to bottom, #360fca, #311c87 80%, #5012d9);
     background-image: linear-gradient(
       180deg,
       #081275 15%,
@@ -83,23 +79,10 @@ const BannerWrapper = styled.section`
     transform: translate(-50%, -10%);
     z-index: 3;
   }
-  @media (max-width: 990px) {
-    padding-top: 40px;
-    min-height: 450px;
-    max-height: 450px;
-    .HomePage &.Home {
-      padding-top: 250px;
-      padding-bottom: 200px;
-    }
-  }
   @media (max-width: 575px) {
-    padding-top: 40px;
-    min-height: 525px;
-    max-height: 525px;
-    .HomePage &.Home {
-      padding-top: 230px;
-      padding-bottom: 180px;
-    }
+    // .home_button {
+    //   bottom: 10%;
+    //  }
   }
 `;
 

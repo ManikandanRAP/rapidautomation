@@ -109,6 +109,19 @@ const BannerSection = ({
           </Box>
         </Container>
       </BannerWrapper>
+      <BannerWrapper className="banner_container About">
+        <Container>
+          <Box {...row}>
+            <Box {...textArea}>
+              <Heading {...title} content="Welcome to RAP AI" />
+              <Text
+                {...subdescription}
+                content="At RAP AI, we pioneer Artificial Intelligence driven solutions to transform business applications for a more streamlined approach that boosts operational efficiency. We take pride in ushering a new era of technological innovation with our platform that makes easy work of pulling structured data from a myriad of unstructured content. We provide applications and technology that are a solid foundation for transformation, innovation and savings."
+              />
+            </Box>
+          </Box>
+        </Container>
+      </BannerWrapper>
     </>
   );
 };
@@ -130,7 +143,7 @@ BannerSection.defaultProps = {
     justifyContent: 'center',
   },
   textArea: {
-    width: ['95%', '95%', '80%', '75%', '75%'],
+    width: [1, '95%', '80%', '75%', '75%'],
   },
   title: {
     fontSize: ['26px', '32px', '42px', '45px', '45px'],
@@ -138,6 +151,7 @@ BannerSection.defaultProps = {
     // color: '#0f2137',
     color: '#fff',
     letterSpacing: '-0.025em',
+    mt: ['20px', '20px', '25px', '25px', '25px'],
     mb: ['20px', '20px', '25px', '25px', '25px'],
     lineHeight: '1.31',
     textAlign: 'center',
