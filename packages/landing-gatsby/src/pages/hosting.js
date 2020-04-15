@@ -39,7 +39,6 @@ export default () => {
               <Navbar />
             </DrawerProvider>
           </Sticky>
-
           <BannerSection />
           <FeatureSection />
           <InfoSection />
