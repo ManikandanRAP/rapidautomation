@@ -276,7 +276,7 @@ const Maindeskmenu1 = button => (
       </li>
 
       <li>
-        <Link className="btn btn_secondary">
+        <Link to="/contact" className="btn btn_secondary">
           <span className="btn-text">Book a Demo</span>
         </Link>
       </li>
