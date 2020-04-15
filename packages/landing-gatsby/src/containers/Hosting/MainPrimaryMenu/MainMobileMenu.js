@@ -112,7 +112,7 @@ class MainMobilemenu1 extends React.Component {
               </ul>
             </li>
             <li>
-              <Link to="/contact">About</Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
               <span className="mobile_menu_drop">Resources</span>

@@ -245,7 +245,7 @@ const Maindeskmenu1 = button => (
         </nav>
       </li>
       <li className="mainmenuhead">
-        <Link to="about" className="customItem">
+        <Link to="/about" className="customItem">
           About
         </Link>
       </li>

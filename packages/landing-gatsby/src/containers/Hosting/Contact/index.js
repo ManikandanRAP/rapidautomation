@@ -40,7 +40,7 @@ const ContactSection = ({
     setServerState({ submitting: true });
     axios({
       method: 'post',
-      url: '#',
+      url: 'https://getform.io/f/7683b371-ada9-47cb-8ae8-307a6f2afc07',
       data: new FormData(form),
     })
       .then(r => {
