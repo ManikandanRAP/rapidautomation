@@ -54,7 +54,7 @@ const BannerSection = ({
           </Box>
         </Container>
         <Box className="home_button">
-          <Link to="/" className="btn btn_primary">
+          <Link to="/contact" className="btn btn_primary">
             <span className="btn-text">Getting Started</span>
           </Link>
         </Box>
@@ -75,7 +75,7 @@ const BannerSection = ({
                 content="Extract meaningful structured content from myriad types of forms and feed this structured data into other systems that make use of such content."
               />
               <Box>
-                <Link to="/" className="btn btn_secondary">
+                <Link to="/contact" className="btn btn_secondary">
                   <span className="btn-text">Book a Demo</span>
                 </Link>
               </Box>

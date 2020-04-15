@@ -40,7 +40,7 @@ const Maindeskmenu1 = button => (
               <Link>How It Works</Link>
             </li>
             <li style={{ textAlign: 'center' }}>
-              <Link to="/" className="customItem btn btn_primary">
+              <Link to="/contact" className="customItem btn btn_primary">
                 <span className="btn-text">Getting Started</span>
               </Link>
             </li>

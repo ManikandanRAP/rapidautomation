@@ -135,7 +135,7 @@ const Scrollfixed = ({
                 </ListItem>
               </List>
               <Box className="empty_space20" />
-              <Link to="/" className="btn btn_secondary dark">
+              <Link to="/contact" className="btn btn_secondary dark">
                 <span className="btn-text">Getting Started</span>
               </Link>
             </Box>
